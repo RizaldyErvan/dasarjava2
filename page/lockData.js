@@ -50,17 +50,21 @@ const getData = new Promise((resolve, reject) => {
     $('#submateri4').removeClass('bxs-lock-alt');
     $('#submateri4').addClass('bxs-chevron-down')
     $('#submateri4').addClass('arrow');
-}
-if(data.materi5 == true){
-  $('#submateri5').removeClass('bxs-lock-alt');
-  $('#submateri5').addClass('bxs-chevron-down')
-  $('#submateri5').addClass('arrow');
-}
-if(data.materi6 == true){
-  $('#submateri6').removeClass('bxs-lock-alt');
-  $('#submateri6').addClass('bxs-chevron-down')
-  $('#submateri6').addClass('arrow');
-}
+  }
+  if(data.materi5 == true){
+    $('#submateri5').removeClass('bxs-lock-alt');
+    $('#submateri5').addClass('bxs-chevron-down')
+    $('#submateri5').addClass('arrow');
+  }
+  if(data.materi6 == true){
+    $('#submateri6').removeClass('bxs-lock-alt');
+    $('#submateri6').addClass('bxs-chevron-down')
+    $('#submateri6').addClass('arrow');
+  }
+  if(data.evaluasi == true){
+    $('#submaterEvaluasi').removeClass('bxs-lock-alt');
+    $('#aevaluasi').attr('href', '/page/petunjuk_evaluasi.html');
+  }
 
     resolve()
 })
