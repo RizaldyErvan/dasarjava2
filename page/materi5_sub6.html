@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="stylemateri.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+     <!-- Unicons CSS -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+     <!-- Highlightjs -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+     <!-- Font Editor -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+      <!-- Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
+
+   <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+
+   </head>
+<body>
+  <div class="sidebar open">
+    <div class="logo-details">
+      <img src="/assets/img/JavaTiKom.png" width="50" height="50"/>
+
+      <span class="logo_name">Javatikom</span>
+    </div>
+    <hr>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="/page/home.html">
+            <i class='bx bxs-home'></i>
+            <span class="link_name">Home</span>
+          </a>
+        </div>
+        
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Materi 1</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 1</a></li>
+          <li><a href="/page/materi1_sub1.html">Pengantar Java</a></li>
+          <li><a href="/page/materi1_sub2.html">Sintaks Java</a></li>
+          <li><a href="/page/materi1_sub3.html">Output Java</a></li>
+          <li><a href="/page/petunjukkuis_materi1.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Materi 2</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri2" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 2</a></li>
+          <li><a href="/page/materi2_sub1.html">Pengantar Variabel</a></li>
+          <li><a href="/page/materi2_sub2.html">Variabel Cetak</a></li>
+          <li><a href="/page/materi2_sub3.html">Deklarasi Banyak Variabel</a></li>
+          <li><a href="/page/materi2_sub4.html">Variabel Identifier</a></li>
+          <li><a href="/page/materi2_sub5.html" class="aktif2">Variabel Konstanta</a></li>
+          <li><a href="/page/petunjukkuis_materi2.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 3</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri3" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 3</a></li>
+          <li><a href="/page/materi3_sub1.html">Pengantar Tipe Data Java</a></li>
+          <li><a href="/page/materi3_sub2.html">Jenis-Jenis Tipe Data</a></li>
+          <li><a href="/page/materi3_sub3.html">Tipe Data Integer</a></li>
+          <li><a href="/page/materi3_sub4.html">Floating-point</a></li>
+          <li><a href="/page/materi3_sub5.html">Tipe Data Boolean</a></li>
+          <li><a href="/page/materi3_sub6.html">Tipe Data Character</a></li>
+          <li><a href="/page/materi3_sub7.html">Tipe Data String</a></li>
+          <li><a href="/page/materi3_sub8.html">Tipe Data Array</a></li>
+          <li><a href="/page/petunjukkuis_materi3.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 4</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri4" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 4</a></li>
+          <li><a href="/page/materi4_sub1.html">Pengantar Operator</a></li>
+          <li><a href="/page/materi4_sub2.html">Jenis-Jenis Operator</a></li>
+          <li><a href="/page/materi4_sub3.html">Aritmatika</a></li>
+          <li><a href="/page/materi4_sub4.html">Increment dan Decrement</a></li>
+          <li><a href="/page/materi4_sub5.html">Perbandingan Relasional</a></li>
+          <li><a href="/page/materi4_sub6.html">Logika / Boolean</a></li>
+          <li><a href="/page/materi4_sub7.html">Assignment</a></li>
+          <li><a href="/page/petunjukkuis_materi4.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link aktif">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 5</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri5" ></i>
+        </div>
+        <ul class="sub-menu menuAktif">
+          <li><a class="link_name" href="#">Materi 5</a></li>
+          <li><a href="/page/materi5_sub1.html">Perintah IF</a></li>
+          <li><a href="/page/materi5_sub2.html">Perintah Switch</a></li>
+          <li><a href="/page/materi5_sub3.html">Perintah For</a></li>
+          <li><a href="/page/materi5_sub4.html">Perintah While</a></li>
+          <li><a href="/page/materi5_sub5.html">Perintah Do While</a></li>
+          <li><a href="/page/materi5_sub6.html"  class="aktif2">Perintah Break</a></li>
+          <li><a href="/page/materi5_sub7.html">Perintah Continue</a></li>
+          <li><a href="/page/petunjukkuis_materi5.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 6</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri6" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 6</a></li>
+          <li><a href="/page/materi6_sub1.html">Pengertian Methods</a></li>
+          <li><a href="/page/materi6_sub2.html">Parameter dan Argumen <br> Method</a></li>
+          <li><a href="/page/materi6_sub3.html">Perintah Return <br>Bahasa Java</a></li>
+          <li><a href="/page/materi6_sub4.html">Variabel Scope</a></li>
+          <li><a href="/page/petunjukkuis_materi6.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="/page/petunjuk_evaluasi.html">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+        </div>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name" id="nama_mahasiswa"></div>
+        <div class="job" id="nim_mahasiswa"></div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text">Dasar-Dasar Pemrograman Java</span>
+      <a href="/page/home.html">
+        <i class='bx bx-home-smile'></i>
+      </a>
+    </div>
+
+    <div class="konten">
+      <div class="materi">
+        <!-- <div class="alert alert-light text-center" role="alert">
+          Materi 1 - Definisi Bahasa Pemrograman Java
+        </div> -->
+        <div class="tab-content card p-3">
+            <h1>Pengenalan Struktur Kontrol Pemrograman Java</h1>
+            <hr>
+        <div class="accordion mb-2" id="accordionTujpem">
+            <div class="card">
+              <div class="card-header" id="headingTujpem">
+                <h5 class="mb-0">
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#tujpem" aria-expanded="true" aria-controls="tujpem">
+                    <strong> Tujuan Pembelajaran </strong>
+                  </button>
+                </h5>
+              </div>
+              <div class="card-body" id="cardtujpem">
+                <ul>
+                    <li>Mahasiswa mampu menerangkan berbagai macam perintah Struktur Kontrol pada Java</li>
+                    <li>Mahasiswa mampu memahami penggunaan berbagai macam Struktur Kontrol pada Java</li>
+                    <li>Mahasiswa mampu menerapkan berbagai macam Struktur Kontrol pada Java</li>
+                </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+            
+            <!-- <p>Bacalah <b style="color: #9B2915;">definisi</b> di bawah ini!</p> -->
+
+            <div class="card my-2 shadow">
+                <div class="card-body" style="background-color: #fffbdb">
+
+                     <!-- poin 6 -->
+                     <div id="enam">
+                        <h5>F. Perintah Break</h5>
+                        <!-- <p class="text-align: left;"><b>Operasi I/O Pemrograman Java</b></p> -->
+                        
+                        <p style="text-align: justify;">Ketika membuat perulangan, kadang kita ingin keluar dari perulangan sebelum waktunya.</p>
+
+                        <p style="text-align: justify;">Sebagai contoh, kita sedang membuat kode program untuk mencari sebuah nilai dalam array yang terdiri dari 100 element. Jika ternyata nilai sudah ditemukan di posisi ke-43, maka sisa perulangan tidak diperlukan lagi. Akan lebih efisien jika perulangan tersebut langsung berhenti pada saat itu juga, dan inilah fungsi dari perintah <b>BREAK</b>.</p>
+
+                        <p style="text-align: justify;">Secara sederhana, <b>BREAK</b> adalah perintah khusus yang dipakai untuk <b>memaksa sebuah perulangan berhenti sebelum waktunya</b>. Perintah break ini bisa dipakai dalam semua jenis perulangan, baik itu FOR, WHILE, maupun DO WHILE.</p>
+                
+                        <p style="text-align: justify;">Berikut format dasar penggunaan perintah <b>BREAK</b> dalam perulangan <b>FOR</b>:</p>
+                        <pre>
+                            <code class="language-java">
+for (start; condition_1; increment) 
+{
+    // kode program
+    // kode program
+    if (condition_2) {
+        break;
+    }
+}
+                            </code>
+                        </pre>
+
+                        <p style="text-align: justify;">Dalam contoh ini, jika <b>condition_2</b> terpenuhi (bernilai <b>true</b>), maka perulangan akan langsung berhenti meskipun belum mencapai kondisi akhir di <b>condition_1</b>.</p>
+                        <hr>
+
+                        <strong>Contoh Kode Program Perintah BREAK Bahasa Java</strong>
+                        <p style="text-align: justify;">Sebelum masuk ke perintah <b>break</b>, berikut contoh perulangan FOR bahasa Java untuk menampilkan daftar penambahan angka:</p>
+                        <div class="card w-90 bg-light">
+                            <div class="card-body">
+                              <h5 class="card-title">Main.java</h5>
+                              <div class="card-body fs-5">
+                                <pre>
+                                  <code class="language-java">
+class Main {
+    public static void main(String args[]){
+        
+        int i;
+        for (i = 1; i <= 10; i++) { 
+        System.out.println(i + " + " + i + " = "+ (i+i));
+        }
+    
+    }
+}
+                                  </code>
+                                </pre>
+                                <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5-19" aria-controls="offcanvasRight5-19">Coba Sendiri</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight5-19" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body h-100">
+                                <pre>
+                                  <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]){
+        
+        int i;
+        for (i = 1; i <= 10; i++) { 
+        System.out.println(i + " + " + i + " = "+ (i+i));
+        }
+    
+    }
+}
+                                    
+                                  </code>
+                                </pre>
+                                <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                              </div>
+                            </div>
+
+                            <p style="text-align: justify;" class="mt-3">Di sini kita menggunakan perulangan <b>FOR</b> untuk membuat daftar penambahan 1 + 1, 2 + 2, dst hingga 10 + 10.</p>
+
+                            <p style="text-align: justify;">Sekarang saya ingin jika variabel counter i sudah mencapai angka 5, maka hentikan perulangan (<b>break</b>). Berikut kode programnya:</p>
+
+                            <div class="card w-90 bg-light">
+                                <div class="card-body">
+                                  <h5 class="card-title">Main.java</h5>
+                                  <div class="card-body fs-5">
+                                    <pre>
+                                      <code class="language-java">
+class Main {
+    public static void main(String args[]){
+        
+        int i;
+        for (i = 1; i <= 10; i++) { 
+        System.out.println(i + " + " + i + " = "+ (i+i));
+        if (i == 5) { 
+            break; 
+        }
+        }
+    
+    }
+}
+                                      </code>
+                                    </pre>
+                                    <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5-20" aria-controls="offcanvasRight5-20">Coba Sendiri</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight5-20" aria-labelledby="offcanvasRightLabel">
+                                  <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body h-100">
+                                    <pre>
+                                      <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]){
+        
+        int i;
+        for (i = 1; i <= 10; i++) { 
+        System.out.println(i + " + " + i + " = "+ (i+i));
+        if (i == 5) { 
+            break; 
+        }
+        }
+    
+    }
+}
+
+                                      </code>
+                                    </pre>
+                                    <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                                
+                                <p style="text-align: justify;" class="mt-3">Di dalam perulangan FOR, yakni pada baris 7 terdapat pemeriksaan kondisi <b>if (i == 5)</b>. Jika kondisi ini terpenuhi (variabel counter i sudah bernilai 5) maka jalankan perintah <b>BREAK</b>. Hasilnya, perulangan langsung berhenti begitu variabel <b>i</b> mencapai angka 5.</p>
+
+                                <p style="text-align: justify;">Sebagai tambahan, posisi pemeriksaan kondisi ini bisa berpengaruh kepada tampilan akhir. Perhatikan kode program berikut:</p>
+
+                                <div class="card w-90 bg-light">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Main.java</h5>
+                                      <div class="card-body fs-5">
+                                        <pre>
+                                          <code class="language-java">
+class Main {
+    public static void main(String args[]){
+        
+        int i;
+        for (i = 1; i <= 10; i++) { 
+        if (i == 5) { 
+            break; 
+        }
+        System.out.println(i + " + " + i + " = "+ (i+i));
+        }
+    
+    }
+}
+                                          </code>
+                                        </pre>
+                                        <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5-21" aria-controls="offcanvasRight5-21">Coba Sendiri</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight5-21" aria-labelledby="offcanvasRightLabel">
+                                      <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                      </div>
+                                      <div class="offcanvas-body h-100">
+                                        <pre>
+                                          <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]){
+        
+        int i;
+        for (i = 1; i <= 10; i++) { 
+        if (i == 5) { 
+            break; 
+        }
+        System.out.println(i + " + " + i + " = "+ (i+i));
+        }
+    
+    }
+}
+    
+                                          </code>
+                                        </pre>
+                                        <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                      </div>
+                                    </div>
+
+                                    <p style="text-align: justify;" class="mt-3">Bisakah anda menjelaskan kenapa perulangan kita berhenti pada angka 4 dan bukan di angka 5 seperti sebelumnya? Padahal kondisi yang dipakai tetap sama, yakni <b>if (i == 5) { break; }</b></p>
+
+                                    <p style="text-align: justify;">Ini terjadi karena perubahan posisi perintah <b>System.out.println</b>. Dalam contoh pertama, perintah <b>System.out.println</b> ditulis sebelum pemeriksaan kondisi <b>if (i == 5)</b>. Ini berarti begitu variabel counter i naik menjadi 5, perintah <b>System.out.println</b> akan di proses terlebih dahulu, setelah itu barulah perintah <b>break</b> di jalankan.</p>
+
+                                    <p style="text-align: justify;">Sedangkan pada kode program kali ini, ketika variabel <i>i</i> sampai ke angka 5, maka langsung <b>break</b> tanpa sempat menjalankan perintah <b>System.out.println</b>. Ini terjadi karena perintah <b>System.out.println</b> ditulis setelah pemeriksaan kondisi.</p>
+
+                                    <p style="text-align: justify;">Sebagai penutup, berikut contoh penggunaan perintah <b>break</b> pada perulangan <b>WHILE</b>:</p>
+
+                                    <div class="card w-90 bg-light">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Main.java</h5>
+                                          <div class="card-body fs-5">
+                                            <pre>
+                                              <code class="language-java">
+class Main {
+    public static void main(String args[]){
+        
+        int i = 1;
+        while (i <= 10){
+        if (i == 5) {
+            break;
+        }
+        System.out.println(i + " + " + i + " = "+ (i+i));
+        i++;
+        } 
+    
+    }
+}
+                                              </code>
+                                            </pre>
+                                            <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5-22" aria-controls="offcanvasRight5-22">Coba Sendiri</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight5-22" aria-labelledby="offcanvasRightLabel">
+                                          <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                          </div>
+                                          <div class="offcanvas-body h-100">
+                                            <pre>
+                                              <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]){
+        
+        int i = 1;
+        while (i <= 10){
+        if (i == 5) {
+            break;
+        }
+        System.out.println(i + " + " + i + " = "+ (i+i));
+        i++;
+        } 
+    
+    }
+}
+        
+                                              </code>
+                                            </pre>
+                                            <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                          </div>
+                                        </div>
+
+                                        <p style="text-align: justify;" class="mt-3">Kita mengkonversi perulangan FOR sebelumnya menjadi WHILE. Dan karena perintah <b>System.out.println</b> juga ditulis setelah perintah <b>break</b>, maka penambahan yang tampil hanya sampai 4 saja.</p>
+                                        <hr>
+
+                                        <p style="text-align: justify;">Dalam tutorial kali ini kita telah membahas cara penggunaan <b>perintah BREAK</b>. Berikutnya akan dilanjutkan dengan membahas <b>perintah CONTINUE</b> dalam bahasa pemrograman Java.</p>
+
+
+                                    </div>
+                                </div>
+                    <!-- akhir poin 6 -->
+                </div>
+                <div class="prevNext d-grid gap-2 d-md-flex justify-content-between mt-3">
+                    <a href="/page/materi5_sub5.html" class="btn btn-outline-info px-4">
+                        <span style="font-size: 1em">
+                            <i class='bx bx-left-arrow-alt'></i>
+                        </span>
+                        PREV
+                    </a>
+                    <a href="/page/materi5_sub7.html">
+                        <button id="next" class="btn btn-outline-info px-4 float-right ">
+                            NEXT
+                            <span style="font-size: 1em">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  
+    <!-- Ace Editor Java -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/ace.min.js" integrity="sha512-VDk4SZZXv8Karl+tl3RKw3grEZ0ofFrh7J5IKnVgP843O85vbeZv/npjEWtM9BhDuUHbtJc60ZpR4wjiYTfC7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/mode-java.min.js" integrity="sha512-dAGTKAA1p8e4hYvchE5NLx6G7uv3nwuRNHpazHyO0LzdqKqArrm16asxFILrjz6dy8BhDrlMNRFHTfqDVCW/sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/theme-monokai.min.js" integrity="sha512-8rSB/wU3KoN3rr1VHwPP4dfpbU063BvH6qzwt0oe9E2ThEchzd8MmJylVPxZ5kLvxsShgtWvc9AtIlS7rmPunA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- <script src="/page/paginator.js"></script>
+    <script src="/page/cek_pemahaman.js"></script> -->
+    <script src="/page/latihan_materi2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+  
+    <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e)=>{
+     let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+     arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("close");
+    });
+  </script>
+  <script src="/page/simpandata.js"></script>
+  <script type="module" src="/page/lockData.js"></script>
+  </body>
+  </html>

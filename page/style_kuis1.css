@@ -1,0 +1,109 @@
+.home-section {
+    position: relative;
+    background: rgb(238, 238, 238);
+    max-width: 100%;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+}
+
+.home-section .home-content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    background-color: #FFACAC;
+    justify-content: space-between;
+}
+
+.home-section .home-content .text {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+content .text {
+    color: #37306B;
+    font-size: 35px;
+}
+
+.navbar_kuis1{
+    background-color: #FFACAC;
+}
+
+.footer_kuis1{
+    background-color: #FFEBB4;
+}
+
+.btn_sebelumnya1{
+    background-color: #FFACAC;
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn_selanjutnya1{
+    background-color: #FFEBB4;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+/* Box kuis */
+
+.kotak-soal-evaluasi {
+    width: 18%;
+    padding: 5px 0;
+    background-color: #FFEBB4;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.kode-belum-dijawab {
+    background-color: #FFEBB4;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.kode-sudah-dijawab {
+    background-color: #FFACAC;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.pilihan-jawaban {
+    background-color: #C0DBEA;
+    color: black;
+    margin: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+}
+.div-soal{
+    height: 55vh;
+    overflow: auto;
+}
+.radio-pilihan-ganda:checked ~ .pilihan-jawaban,
+.btn-nomor-sudah-dijawab,
+.pilihan-jawaban-dipilih,
+.pilihan-jawaban:hover {
+  background-color: #FFACAC !important;
+  color: black !important;
+}
+
+#noCopy {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+

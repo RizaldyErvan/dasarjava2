@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="stylemateri.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+     <!-- Unicons CSS -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+     <!-- Highlightjs -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+     <!-- Font Editor -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+      <!-- Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
+
+   <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+
+   </head>
+<body>
+  <div class="sidebar open">
+    <div class="logo-details">
+      <img src="/assets/img/JavaTiKom.png" width="50" height="50"/>
+
+      <span class="logo_name">Javatikom</span>
+    </div>
+    <hr>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="/page/home.html">
+            <i class='bx bxs-home'></i>
+            <span class="link_name">Home</span>
+          </a>
+        </div>
+
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Materi 1</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 1</a></li>
+          <li><a href="/page/materi1_sub1.html">Pengantar Java</a></li>
+          <li><a href="/page/materi1_sub2.html">Sintaks Java</a></li>
+          <li><a href="/page/materi1_sub3.html">Output Java</a></li>
+          <li><a href="/page/petunjukkuis_materi1.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link aktif">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Materi 2</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri2" ></i>
+        </div>
+        <ul class="sub-menu menuAktif">
+          <li><a class="link_name" href="#">Materi 2</a></li>
+          <li><a href="/page/materi2_sub1.html">Pengantar Variabel</a></li>
+          <li><a href="/page/materi2_sub2.html">Variabel Cetak</a></li>
+          <li><a href="/page/materi2_sub3.html">Deklarasi Banyak Variabel</a></li>
+          <li><a href="/page/materi2_sub4.html">Variabel Identifier</a></li>
+          <li><a href="/page/materi2_sub5.html" class="aktif2">Variabel Konstanta</a></li>
+          <li><a href="/page/petunjukkuis_materi2.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 3</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri3" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 3</a></li>
+          <li><a href="/page/materi3_sub1.html">Pengantar Tipe Data Java</a></li>
+          <li><a href="/page/materi3_sub2.html">Jenis-Jenis Tipe Data</a></li>
+          <li><a href="/page/materi3_sub3.html">Tipe Integer</a></li>
+          <li><a href="/page/materi3_sub4.html">Floating-point</a></li>
+          <li><a href="/page/materi3_sub5.html">Tipe Boolean</a></li>
+          <li><a href="/page/materi3_sub6.html">Tipe Character</a></li>
+          <li><a href="/page/materi3_sub7.html">Tipe String</a></li>
+          <li><a href="/page/materi3_sub8.html">Tipe Array</a></li>
+          <li><a href="/page/petunjukkuis_materi3.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 4</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri4" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 4</a></li>
+          <li><a href="/page/materi4_sub1.html">Pengantar Operator</a></li>
+          <li><a href="/page/materi4_sub2.html">Jenis-Jenis Operator</a></li>
+          <li><a href="/page/materi4_sub3.html">Aritmatika</a></li>
+          <li><a href="/page/materi4_sub4.html">Increment dan Decrement</a></li>
+          <li><a href="/page/materi4_sub5.html">Perbandingan Relasionak</a></li>
+          <li><a href="/page/materi4_sub6.html">Logika / Boolean</a></li>
+          <li><a href="/page/materi4_sub7.html">Assignment</a></li>
+          <li><a href="/page/petunjukkuis_materi4.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 5</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri5" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 5</a></li>
+          <li><a href="/page/materi5_sub1.html">Perintah IF</a></li>
+          <li><a href="/page/materi5_sub2.html">Perintah Switch</a></li>
+          <li><a href="/page/materi5_sub3.html">Perintah For</a></li>
+          <li><a href="/page/materi5_sub4.html">Perintah While</a></li>
+          <li><a href="/page/materi5_sub5.html">Perintah Do While</a></li>
+          <li><a href="/page/materi5_sub6.html">Perintah Break</a></li>
+          <li><a href="/page/materi5_sub7.html">Perintah Continue</a></li>
+          <li><a href="/page/petunjukkuis_materi5.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 6</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri6" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 6</a></li>
+          <li><a href="/page/materi6_sub1.html">Pengertian Methods</a></li>
+          <li><a href="/page/materi6_sub2.html">Parameter dan Argumen <br> Method</a></li>
+          <li><a href="/page/materi6_sub3.html">Perintah Return <br>Bahasa Java</a></li>
+          <li><a href="/page/materi6_sub4.html">Variabel Scope</a></li>
+          <li><a href="/page/petunjukkuis_materi6.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="/page/petunjuk_evaluasi.html">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+        </div>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name" id="nama_mahasiswa"></div>
+        <div class="job" id="nim_mahasiswa"></div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text">Dasar-Dasar Pemrograman Java</span>
+      <a href="/page/home.html">
+        <i class='bx bx-home-smile'></i>
+      </a>
+    </div>
+
+    <div class="konten">
+      <div class="materi">
+        <!-- <div class="alert alert-light text-center" role="alert">
+          Materi 1 - Definisi Bahasa Pemrograman Java
+        </div> -->
+        <div class="tab-content card p-3">
+            <h1>Pengenalan Variabel Pemrograman Java</h1>
+            <hr>
+        <div class="accordion mb-2" id="accordionTujpem">
+            <div class="card">
+              <div class="card-header" id="headingTujpem">
+                <h5 class="mb-0">
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#tujpem" aria-expanded="true" aria-controls="tujpem">
+                    <strong> Tujuan Pembelajaran </strong>
+                  </button>
+                </h5>
+              </div>
+              <div class="card-body" id="cardtujpem">
+                <ul>
+                  <li>Mahasiswa mampu menerangkan apa itu Variabel pada Java</li>
+                    <li>Mahasiswa membedakan variabel dan konstanta pada Java</li>
+                    <li>Mahasiswa mampu menghindari kesalahan dalam penamaan variabel program Java</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+            
+            <!-- <p>Bacalah <b style="color: #9B2915;">definisi</b> di bawah ini!</p> -->
+
+            <div class="card my-2 shadow">
+                <div class="card-body" style="background-color: #fffbdb">
+
+                     <!-- poin 4 -->
+                     <div id="tiga">
+                        <h5>E. Variabel Konstanta</h5>
+                        <!-- <p class="text-align: left;"><b>Operasi I/O Pemrograman Java</b></p> -->
+                        
+                        <p style="text-align: justify;">Variabel konstanta adalah variabel yang nilainya tidak dapat diubah setelah dideklarasikan. Dalam bahasa pemrograman Java, kita dapat mendeklarasikan variabel konstanta dengan menggunakan <i>keyword</i> ‘final’. Variabel konstanta biasanya digunakan untuk menyimpan nilai-nilai tetap yang akan digunakan dalam program, seperti nilai konversi atau nilai yang dipakai sebagai batas atas atau batas bawah.</p>
+                        <hr>
+                        <p class="text-align: left;"><b>Pembuatan Konstanta dalam Java</b></p>
+                        <p style="text-align: justify;">Untuk membuat konstanta dalam bahasa Java, kita menggunakan format berikut:</p>
+                        <pre>
+                          <code class="language-java">
+< access_modifier > static final < tipe_data > 
+< NAMA_KONSTANTA > = nilai_konstanta;
+
+                          </code>
+                        </pre>
+                        <ul>
+                          <li><p style="text-align: justify;"><b>access_modifier</b>: Adalah salah satu dari <i>keyword public</i>, <i>protected</i> atau <i>private</i>.</p></li>
+                          <li><p style="text-align: justify;"><b>static</b>: Merupakan <i>keyword</i>, untuk membuat variabel yang bisa diakses langsung dari dalam class (tanpa harus membuat <i>object</i>).</p></li>
+                          <li><p style="text-align: justify;"><b>final</b>: Ditambahkan agar variabel ini bersifat final dan nilainya tidak bisa ditimpa.</p></li>
+                          <li><p style="text-align: justify;"><b>tipe_data</b>: Tipe data dari konstanta.</p></li>
+                          <li><p style="text-align: justify;"><b>NAMA_KONSTANTA</b>: Adalah tempat menulis nama konstanta. Aturan nama konstanta ini sama seperti aturan <i>identifier</i>. Yakni bisa terdiri dari huruf, angka dan <i>underscore</i>. Angka tidak bisa menjadi karakter pertama. Selain itu, nama konstanta ini ditulis dalam huruf besar semua (SNAKE_CASE).</p></li>
+                          <li><p style="text-align: justify;"><b>nilai_konstanta</b>: Nilai yang akan diisi ke dalam konstanta.</p></li>
+                          <hr>
+                        </ul>
+                        <strong>Konstanta ini ditulis di dalam class dan sebelum perintah <b><i>public static void main(String args[])</i></b>.</strong>
+                        <div class="card w-90 bg-light">
+                          <div class="card-body">
+                            <h5 class="card-title">main.java</h5>
+                            <div class="card-body fs-5">
+                              <pre>
+                                <code class="language-java">
+class main {
+    public static final int KURS_DOLLAR = 15000;
+    public static final double PI = 3.14;
+    public static final String WEBSITE = "Dasar-Dasar Java";
+
+        public static void main(String args[]) {
+
+            System.out.println(KURS_DOLLAR);
+            System.out.println(PI);
+            System.out.println(WEBSITE);
+    }
+}
+                                </code>
+                              </pre>
+                              <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2-7" aria-controls="offcanvasRight2-7">Coba Sendiri</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight2-7" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body h-100">
+                              <pre>
+                                <code class="language-java pe-none">
+class main {
+    public static final int KURS_DOLLAR = 15000;
+    public static final double PI = 3.14;
+    public static final String WEBSITE = "Dasar-Dasar Java";
+
+        public static void main(String args[]) {
+
+            System.out.println(KURS_DOLLAR);
+            System.out.println(PI);
+            System.out.println(WEBSITE);
+    }
+}
+                                </code>
+                              </pre>
+                              <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                            </div>
+                          </div>
+
+                        <p style="text-align: justify;">Pada kode di atas terdapat 3 buah konstanta, yakni <b><i>KURS_DOLLAR</i></b>, <b><i>PI</i></b> dan <b><i>WEBSITE</i></b>. Setiap konstanta harus dideklarasikan dengan tipe data yang sesua, yaitu <b><i>int</i></b>, <b><i>double</i></b>, dan <b><i>String</i></b>. Kemudian ketiga konstanta tadi akan ditampilkan dengan perintah <b><i>System.out.println()</i></b>.</p>
+                    </div>
+                    <hr>
+
+
+                    <div class="card latihan mt-2">
+                        <h5 class="card-header">Latihan <a class="btn btn-secondary ms-2" data-bs-toggle="collapse" href="#collapsePetunjuk" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="fa-solid fa-circle-info"></i> Petunjuk Pengerjaan
+                        </a></h5>
+                        <div class="card-body">                    
+                          <div class="collapse show" id="collapsePetunjuk">
+                            <div class="card">
+                            <h5 class="card-header">Petunjuk Mengerjakan Latihan</h5>
+                            <div class="card-body">
+                              <ol>
+                                <li>Jawablah soal-soal dibawah ini dengan mengisikannya pada inputan yang tersedia.</li>
+                                <li>Tekan tombol cek jawaban untuk mencek jawaban.</li>
+                                <li>Apabila inputan berwana <b class="text-danger">Merah</b> jawaban salah, dan apabila berwana <b class="text-success">Hijau</b> jawaban benar.</li>
+                              </ol>
+                            </div>
+                          </div>
+                        </div>
+                          <ol>
+                            <li class="mt-4">Lengkapilah bagian yang kosong pada kode program berikut ini untuk menampilkan output hasil dari penjumlahan variabel <b>b + c</b>. Berikan variabel <b>hasil</b> untuk menghitung penjumlahan variabel <b>b + c</b>.</li>
+                            <div class="card latihan p-3">
+                              <code class="text-dark lh-lg">
+                              class Main {<br>
+                                &emsp;&emsp;public static void main(String args[]) {<br>
+                              &emsp;<br>
+                              &emsp;&emsp;b = 13;<br>
+                              &emsp;&emsp;c = 18;<br>
+                              &emsp;<input type="text" class="m-1 jawab" id="answer1" maxlength="5" size="5" placeholder="..." /> =  b + c;<br>
+                              &emsp;&emsp;System.out.println("<input type="text" class="m-1 jawab" id="answer2" maxlength="5" size="5" placeholder="..." />");<br>
+                              &emsp;}<br>
+                                }
+                              </code>
+                            </div>
+                            <li class="mt-4">Lengkapilah program Java berikut untuk mengisi tipe data yang variabelnya sudah ditentukan. Berikan tipe data <b>integer</b> untuk variabel <b>hasilbelajar</b>,  berikan tipe data <b>double</b> untuk variabel <b>ipk</b>, berikan tipe data <b>char</b> untuk variabel <b>kelas</b>, berikan tipe data <b>String</b> untuk variabel <b>nama</b>, kemudian cetak variabel <b>nama</b>!</li>
+                            <div class="card latihan p-3">
+                              <code class="text-dark lh-lg">
+                                class Main {<br>
+                                  &emsp;&emsp;public static void main(String args[]) {<br>
+                                &emsp;<br>
+                                &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer3" maxlength="8" size="8" placeholder="..." /> hasilbelajar;<br> 
+                                &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer4" maxlength="8" size="8" placeholder="..." /> ipk;<br> 
+                                &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer5" maxlength="8" size="8" placeholder="..." /> kelas;<br> 
+                                &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer6" maxlength="8" size="8" placeholder="..." /> nama;<br><br>
+                                &emsp;&emsp;System.out.println("<input type="text" class="m-1 jawab" id="answer7" maxlength="10" size="10" placeholder="..." />");
+                                &emsp;&emsp;<br>
+                                  &emsp;}<br>
+                                }
+                              </code>
+                            </div>
+                            <li class="mt-4">Lengkapilah program Java berikut untuk mengisi variabel <i>identifier</i> yang tipe datanya sudah ditentukan!. Berikan variabel <b>jumlahSepatu = 5</b> pada tipe data <b>integer</b>, berikan variabel <b>hargaSatuan = 2.5</b> pada tipe data <b>double</b>, berikan variabel <b>namaLengkap = Fulan</b> pada tipe data <b>String</b>, kemudian cetak variabel <b>hargaSatuan</b></li>
+                            <div class="card latihan p-3">
+                              <code class="text-dark lh-lg">
+                                    class Main {<br>
+                                      &emsp;&emsp;public static void main(String args[]) {<br>
+                                    &emsp;<br>
+                                    &emsp;&emsp;&emsp;int &emsp;&emsp;&emsp;<input type="text" class="m-1 jawab" id="answer8" maxlength="30" size="30" placeholder="..." />;<br>
+                                    &emsp;&emsp;&emsp;double <input type="text" class="m-1 jawab" id="answer9" maxlength="30" size="30" placeholder="..." />;<br>
+                                    &emsp;&emsp;&emsp;String <input type="text" class="m-1 jawab" id="answer10" maxlength="30" size="30" placeholder="..." />;<br><br>
+                                    &emsp;&emsp;&emsp; System.out.println("<input type="text" class="m-1 jawab" id="answer11" maxlength="15" size="15" placeholder="..." />");<br>
+                                    &emsp;}<br>
+                                    }
+                                  </code>
+                            </div>
+                            <li class="mt-4"> Lengkapilah program Java berikut untuk membuat tiga variabel dengan tipe data yang sama. Berikan tipe datanya adalah <b>integer</b> kemudian cetak hasil penjumlahan ketiga variabel tersebut!</li>
+                            <div class="card latihan p-3">
+                              <code class="text-dark lh-lg">
+                                  class Main {<br>
+                                    &emsp;&emsp;public static void main(String args[]) {<br>
+                                  &emsp;<br>
+                                  &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer12" maxlength="8" size="8" placeholder="..." /> x = 13 &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer13" maxlength="8" size="8" placeholder="..." />
+                                 y = 26 &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer14" maxlength="8" size="8" placeholder="..." />&emsp;&emsp; z = 18;<br><br>
+                                 &emsp;&emsp;&emsp; System.out.println(x &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer15" maxlength="5" size="5" placeholder="..." />&emsp;&emsp;y&emsp;&emsp;<input type="text" class="m-1 jawab" id="answer16" maxlength="5" size="5" placeholder="..." />&emsp;&emsp;z);<br>
+                                    &emsp;}<br>
+                                  }
+                                </code>
+                            </div>
+                            <li class="mt-4">Buatlah tipe data <b>String</b>, variabel bernama <b>namaMotor</b> dan berikan nilai <b>Xsr</b>. Lengkapilah bagian yang kosong pada kode program berikut:</li>
+                            <div class="card latihan p-3">
+                              <code class="text-dark lh-lg">
+                                class Main {<br>
+                                  &emsp;&emsp;public static void main(String args[]) {<br>
+                                &emsp;<br>
+                                &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer17" maxlength="15" size="15" placeholder="..." />
+                                &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer18" maxlength="15" size="15" placeholder="..." /> &emsp;&emsp;= 
+                                &emsp;&emsp; <input type="text" class="m-1 jawab" id="answer19" maxlength="30" size="30" placeholder="..." />;<br><br>
+                                &emsp;&emsp; System.out.println("<input type="text" class="m-1 jawab" id="answer20" maxlength="30" size="30" placeholder="..." />");<br>
+                                  &emsp;}<br>
+                                }
+                              </code>
+                            </div>
+                          </ol>
+                          <button type="button" onclick="cekJawaban()" class="btn btn-success" style="padding-left: 18px; padding-right: 18px;">Cek Jawaban</button>
+                          <button type="button" class="btn btn-warning" id="ulang2_1" onclick="reset()">Bersihkan</button>
+                        </div>
+                      </div>
+                    <!-- akhir poin 4 -->
+                </div>
+            </div>
+            <div class="prevNext d-grid gap-2 d-md-flex justify-content-between mt-3">
+                <a href="/page/materi2_sub3.html" class="btn btn-outline-info px-4">
+                    <span style="font-size: 1em">
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </span>
+                    PREV
+                </a>
+                <a href="/page/petunjukkuis_materi2.html">
+                    <button id="next" class="btn btn-outline-info px-4 float-right ">
+                        NEXT
+                        <span style="font-size: 1em">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  
+    <!-- Ace Editor Java -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/ace.min.js" integrity="sha512-VDk4SZZXv8Karl+tl3RKw3grEZ0ofFrh7J5IKnVgP843O85vbeZv/npjEWtM9BhDuUHbtJc60ZpR4wjiYTfC7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/mode-java.min.js" integrity="sha512-dAGTKAA1p8e4hYvchE5NLx6G7uv3nwuRNHpazHyO0LzdqKqArrm16asxFILrjz6dy8BhDrlMNRFHTfqDVCW/sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/theme-monokai.min.js" integrity="sha512-8rSB/wU3KoN3rr1VHwPP4dfpbU063BvH6qzwt0oe9E2ThEchzd8MmJylVPxZ5kLvxsShgtWvc9AtIlS7rmPunA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- <script src="/page/paginator.js"></script>
+    <script src="/page/cek_pemahaman.js"></script> -->
+    <script src="/page/latihan_materi2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+  
+    <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e)=>{
+     let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+     arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("close");
+    });
+  </script>
+  <script src="/page/simpandata.js"></script>
+  <script type="module" src="/page/lockData.js"></script>
+  </body>
+  </html>

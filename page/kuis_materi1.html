@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="style_kuis1.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+     <!-- Unicons CSS -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+     <!-- Highlightjs -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+       <!-- Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
+
+   <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+
+   </head>
+
+   <body>
+    <!-- Awal dari navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow navbar_kuis1 ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/JavaTiKom.png" alt width="100" class="d-inline-block align-text-top">
+            </a>
+            <h2>Kuis Materi 1</h2>
+            <h2>Dasar-Dasar Pemrograman Java</h2>
+        </div>
+    </nav>
+    <!-- Akhir dari navbar -->
+
+    <div class="kontenKuis">
+        <!-- Modal Petunjuk Tabel Pengamatan -->
+        <center>
+           <button type="button" class="btn mx-4 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal"
+               style="background-color: white; color: #534371; border: 3px dashed #534371">
+               <i class="fas fa-search"></i>
+               Petunjuk Pengerjaan (Klik untuk melihat petunjuk pengerjaan!)
+           </button>
+       </center>
+
+       <div class=" mx-3 row my-3">
+           <div class="col-md-9">
+               <div class="card ms-2 my-2">
+                   <div class="card-header d-flex justify-content-between">
+                       <div class="card-header-2 flex-grow-1">Soal Nomor <span class="nomor-soal"></span> Dari 10</div>
+                       <div class="timer-soal px-2 rounded-2  shadow bg-body-tertiary text-center"
+                       style="background-color: white; color: #534371; border: 3px solid #534371; width: 75px;"></div>
+                   </div>
+                   <div class="card-body w-100" >
+                       <div class="pilihan-ganda">
+                           <!-- soal di ambil dari firebase -->
+                           </div>
+
+             
+                       <div class="d-md-flex justify-content-between ">
+                           <button class="btn btn-danger kembali-evaluasi">Soal Sebelumnya</button>
+                           <button class="btn btn-primary lanjut-evaluasi">Soal Selanjutnya</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-3">
+               <div class="card ms-2 my-2">
+                   <div class="card-header">
+                       Nomor Soal
+                   </div>
+                   <div class="card-body ">
+                       <div class="nomorSoal p-1">
+                           <div class="isi-peta">
+
+                               <div class="kolom-peta mb-2">
+                                 <button class="kotak-soal-evaluasi soal-sedang-dibuka">1</button>
+                                 <button class="kotak-soal-evaluasi">2</button>
+                                 <button class="kotak-soal-evaluasi">3</button>
+                                 <button class="kotak-soal-evaluasi">4</button>
+                                 <button class="kotak-soal-evaluasi">5</button>
+                               </div>
+                               <div class="kolom-peta mb-2">
+                                 <button class="kotak-soal-evaluasi">6</button>
+                                 <button class="kotak-soal-evaluasi">7</button>
+                                 <button class="kotak-soal-evaluasi">8</button>
+                                 <button class="kotak-soal-evaluasi">9</button>
+                                 <button class="kotak-soal-evaluasi">10</button>
+                               </div>
+                           </div>
+                           <div class="petunjuk-peta">
+                               <h5>Keterangan :</h5>
+                               <div class="belum-dijawab d-md-flex my-2">
+                                 <div class="kode-belum-dijawab"></div>
+                                 <div class="mt-2 mx-2">Belum dijawab</div>
+                               </div>
+                               <div class="sudah-dijawab d-md-flex my-2">
+                                 <div class="kode-sudah-dijawab"></div>
+                                 <div class="mt-2 mx-2">Sudah dijawab</div>
+                               </div>
+                           </div>
+
+
+                           <div class="d-md-flex justify-content-md-end">
+                               <button class="btn_cekJawaban px-3" style="width: fit-content;" id="submit-evaluasi"><b>Selesai</b></button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+       </div>
+
+                    
+                    <!-- <div class="row my-2">
+                        <div class="col-md-6 align-self-center mt-2">
+                            <a href="/page/materi1_sub1.html" class="btn-md btn-block btn_sebelumnya1">Kembali Ke materi</a>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+<!-- <footer class="text-center pt-4 pb-4 text-black footer_kuis1"> © 2023 Rizaldy Ervan - Media Pembelajaran Pemrograman Java</footer> -->
+<!-- Isi ModalModal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Petunjuk Pengerjaan</h1>
+        </div>
+        <div class="modal-body">
+            <ol>
+                <li class="lh-lg">Kuis 1 terdiri dari 10 soal berupa pilihan ganda </li>
+                <li class="lh-lg">Setiap soal memiliki bobot nilai sebesar 10</li>
+                <li class="lh-lg">Jawablah soal dengan menekan pilihan jawaban yang dianggap benar</li>
+                <li class="lh-lg">Waktu pengerjaan adalah 30 menit. Jika waktu pengerjaan habis, maka tampilan akan beralih ke halaman hasil</li>
+                <li class="lh-lg">Setelah semua pertanyaan selesai dijawab, tekan tombol "Selesai" dan halaman hasil akan muncul</li>
+                <li class="lh-lg">Selesaikan semua soal sebelum waktu habis karena jika waktu habis maka secara otomatis kuis akan tertutup</li>
+            </ol>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+<script type="module" src="kuis_materi1.js"></script>
+<script type="module" src="/page/waktuMundur.js"></script>
+<script type="module" src="/page/tanggal.js"></script>
+</body>
+</html>

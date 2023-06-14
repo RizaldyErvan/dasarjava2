@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="stylemateri.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+     <!-- Unicons CSS -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+     <!-- Highlightjs -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+     <!-- Font Editor -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+      <!-- Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
+
+   <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+
+   </head>
+<body>
+  <div class="sidebar open">
+    <div class="logo-details">
+      <img src="/assets/img/JavaTiKom.png" width="50" height="50"/>
+
+      <span class="logo_name">Javatikom</span>
+    </div>
+    <hr>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="/page/home.html">
+            <i class='bx bxs-home'></i>
+            <span class="link_name">Home</span>
+          </a>
+        </div>
+        
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Materi 1</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 1</a></li>
+          <li><a href="/page/materi1_sub1.html">Pengantar Java</a></li>
+          <li><a href="/page/materi1_sub2.html">Sintaks Java</a></li>
+          <li><a href="/page/materi1_sub3.html">Output Java</a></li>
+          <li><a href="/page/petunjukkuis_materi1.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Materi 2</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri2" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 2</a></li>
+          <li><a href="/page/materi2_sub1.html">Pengantar Variabel</a></li>
+          <li><a href="/page/materi2_sub2.html">Variabel Cetak</a></li>
+          <li><a href="/page/materi2_sub3.html">Deklarasi Banyak Variabel</a></li>
+          <li><a href="/page/materi2_sub4.html">Variabel Identifier</a></li>
+          <li><a href="/page/materi2_sub5.html" class="aktif2">Variabel Konstanta</a></li>
+          <li><a href="/page/petunjukkuis_materi2.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 3</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri3" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 3</a></li>
+          <li><a href="/page/materi3_sub1.html">Pengantar Tipe Data Java</a></li>
+          <li><a href="/page/materi3_sub2.html">Jenis-Jenis Tipe Data</a></li>
+          <li><a href="/page/materi3_sub3.html">Tipe Data Integer</a></li>
+          <li><a href="/page/materi3_sub4.html">Floating-point</a></li>
+          <li><a href="/page/materi3_sub5.html">Tipe Data Boolean</a></li>
+          <li><a href="/page/materi3_sub6.html">Tipe Data Character</a></li>
+          <li><a href="/page/materi3_sub7.html">Tipe Data String</a></li>
+          <li><a href="/page/materi3_sub8.html">Tipe Data Array</a></li>
+          <li><a href="/page/petunjukkuis_materi3.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link aktif">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 4</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri4" ></i>
+        </div>
+        <ul class="sub-menu menuAktif">
+          <li><a class="link_name" href="#">Materi 4</a></li>
+          <li><a href="/page/materi4_sub1.html">Pengantar Operator</a></li>
+          <li><a href="/page/materi4_sub2.html">Jenis-Jenis Operator</a></li>
+          <li><a href="/page/materi4_sub3.html">Aritmatika</a></li>
+          <li><a href="/page/materi4_sub4.html">Increment dan Decrement</a></li>
+          <li><a href="/page/materi4_sub5.html">Perbandingan Relasional</a></li>
+          <li><a href="/page/materi4_sub6.html">Logika / Boolean</a></li>
+          <li><a href="/page/materi4_sub7.html" class="aktif2">Assignment</a></li>
+          <li><a href="/page/petunjukkuis_materi4.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 5</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri5" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 5</a></li>
+          <li><a href="/page/materi5_sub1.html">Perintah IF</a></li>
+          <li><a href="/page/materi5_sub2.html">Perintah Switch</a></li>
+          <li><a href="/page/materi5_sub3.html">Perintah For</a></li>
+          <li><a href="/page/materi5_sub4.html">Perintah While</a></li>
+          <li><a href="/page/materi5_sub5.html">Perintah Do While</a></li>
+          <li><a href="/page/materi5_sub6.html">Perintah Break</a></li>
+          <li><a href="/page/materi5_sub7.html">Perintah Continue</a></li>
+          <li><a href="/page/petunjukkuis_materi5.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 6</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri6" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 6</a></li>
+          <li><a href="/page/materi6_sub1.html">Pengertian Methods</a></li>
+          <li><a href="/page/materi6_sub2.html">Parameter dan Argumen <br> Method</a></li>
+          <li><a href="/page/materi6_sub3.html">Perintah Return <br>Bahasa Java</a></li>
+          <li><a href="/page/materi6_sub4.html">Variabel Scope</a></li>
+          <li><a href="/page/petunjukkuis_materi6.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="/page/petunjuk_evaluasi.html">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+        </div>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name" id="nama_mahasiswa"></div>
+        <div class="job" id="nim_mahasiswa"></div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text">Dasar-Dasar Pemrograman Java</span>
+      <a href="/page/home.html">
+        <i class='bx bx-home-smile'></i>
+      </a>
+    </div>
+
+    <div class="konten">
+      <div class="materi">
+        <!-- <div class="alert alert-light text-center" role="alert">
+          Materi 1 - Definisi Bahasa Pemrograman Java
+        </div> -->
+        <div class="tab-content card p-3">
+            <h1>Pengenalan Operator Pemrograman Java</h1>
+            <hr>
+        <div class="accordion mb-2" id="accordionTujpem">
+            <div class="card">
+              <div class="card-header" id="headingTujpem">
+                <h5 class="mb-0">
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#tujpem" aria-expanded="true" aria-controls="tujpem">
+                    <strong> Tujuan Pembelajaran </strong>
+                  </button>
+                </h5>
+              </div>
+              <div class="card-body" id="cardtujpem">
+                <ul>
+                    <li>Mahasiswa mampu menerangkan berbagai macam Operator pada Java</li>
+                    <li>Mahasiswa mampu memahami penggunaan berbagai macam Operator pada Java</li>
+                    <li>Mahasiswa mampu menerapkan berbagai macam Operator pada Java</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+            
+            <!-- <p>Bacalah <b style="color: #9B2915;">definisi</b> di bawah ini!</p> -->
+
+            <div class="card my-2 shadow">
+                <div class="card-body" style="background-color: #fffbdb">
+
+                     <!-- poin 7 -->
+                     <div id="tujuh">
+                        <h5>G. Operator Assignment</h5>
+                        <!-- <p class="text-align: left;"><b>Operasi I/O Pemrograman Java</b></p> -->
+                        
+                        <p style="text-align: justify;"><b>Operator assignment</b> adalah operator untuk memasukkan suatu nilai ke dalam variabel. Operator ini sebenarnya sudah sering kita pakai sepanjang tutorial bahasa Java di Duniailkom. Dalam bahasa Java, operator assignment menggunakan tanda sama dengan ( = ).</p>
+                        <p style="text-align: justify;">Pembacaan operasi assignment dilakukan dari kanan ke kiri, bukan dari kiri ke kanan seperti yang biasa kita pahami dalam matematika.</p>
+                        <p style="text-align: justify;">Kode berikut:</p>
+                        <pre>
+                            <code class="language-java">
+a = 1000;
+                            </code>
+                        </pre>
+                        <p style="text-align: justify;">Berarti “masukkan nilai 1000 ke dalam variabel a”. Dalam bahasa pseudo code (jika anda membaca buku tentang algoritma), ini biasa ditulis dengan simbol panah ke kiri:</p>
+                        <pre>
+                            <code class="language-java">
+a <- 1000;
+                            </code>
+                        </pre>
+                        <p style="text-align: justify;">Operator assignment ini disebut juga sebagai <b>Operator Penugasan</b>.</p>
+                        <hr>
+
+                        <strong>Contoh Kode Program Operator Assignment Bahasa Java</strong>
+                        <p style="text-align: justify;">Dalam prakteknya, operator assignment juga bisa dipakai bertingkat seperti contoh berikut:</p>
+                        <div class="card w-90 bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Main.java</h5>
+                                <div class="card-body fs-5">
+                                    <pre>
+                                <code class="language-java">
+class Main {
+    public static void main(String args[]){
+            
+        int a, b, c, d, e;
+            
+        a = 5; 
+        b = 3; 
+        b = b + 1; 
+        c = a + b; 
+        d = c + c + a; 
+        e = (c + d)* a; 
+        
+        System.out.println("Isi variabel a: " + a );  
+        System.out.println("Isi variabel b: " + b );  
+        System.out.println("Isi variabel c: " + c );  
+        System.out.println("Isi variabel d: " + d );  
+        System.out.println("Isi variabel e: " + e );  
+    
+    }
+}
+                                </code>
+                            </pre>
+                            <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4-11" aria-controls="offcanvasRight4-11">Coba Sendiri</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight4-11" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body h-100">
+                        <pre>
+                            <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]){
+            
+        int a, b, c, d, e;
+            
+        a = 5; 
+        b = 3; 
+        b = b + 1; 
+        c = a + b; 
+        d = c + c + a; 
+        e = (c + d)* a; 
+        
+        System.out.println("Isi variabel a: " + a );  
+        System.out.println("Isi variabel b: " + b );  
+        System.out.println("Isi variabel c: " + c );  
+        System.out.println("Isi variabel d: " + d );  
+        System.out.println("Isi variabel e: " + e );  
+    
+    }
+}
+                            </code>
+                        </pre>
+                        <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <p style="text-align: justify;">Pada program di atas terdapat 5 variabel, yakni a, b, c, d, dan e sebagai integer. Kemudian menginput angka 5 ke dalam variabel a (baris 6), dan angka 3 ke dalam variabel b (baris 7).</p>
+                <p style="text-align: justify;">Di baris 8, perintah b = b + 1 mungkin bisa membuat bingung. Tapi intinya adalah, operator assignment di proses dari kanan ke kiri, jadi operasi tersebut bisa dibaca: “tambah isi variabel b dengan 1, lalu simpan kembali ke dalam variabel b”. Karena variabel b sudah berisi angka 3, maka hasil akhirnya variabel b akan bernilai 4.</p>
+                <p style="text-align: justify;">Di baris 9, perintah c = a + b akan di proses sebagai c = 5 + 4, hasilnya c berisi angka 9.</p>
+                <p style="text-align: justify;">Di baris 10, perintah d = c + c + a akan di proses sebagai d = 9 + 9 + 5, hasilnya c berisi angka 23.</p>
+                <p style="text-align: justify;">Terakhir, di baris 11, perintah e = (c + d)* a akan di proses sebagai e = (9 + 23) * 5, hasilnya c berisi angka 160.</p>
+                <hr>
+
+                <h5>Operator Assignment Gabungan Bahasa Java</h5>
+                <p style="text-align: justify;">Operator assignment gabungan adalah cara penulisan singkat operator assignment yang digabung dengan dengan operator lain. Dalam bahasa Java (dan juga bahasa turunan C lain seperti C++, PHP, dan JavaScript), operator assignment gabungan ini terdiri dari operator assignment dengan operator lain seperti <b>aritmatika</b>.</p>
+                <p style="text-align: justify;">Sebagai contoh, operasi <b>a = a + 1</b> bisa disingkat (dan digabung) menjadi <b>a += 1</b>. Contoh lain operasi <b>b >>= 1</b> adalah penulisan singkat dari <b>b = b >> 1</b>.</p>
+                <p style="text-align: justify;">Tidak ada pengaruh apa-apa dari penulisan singkat seperti ini, anda boleh memilih penulisan yang panjang <b>a = a + 1</b>, atau di singkat menjadi <b>a += 1</b>.</p>
+                <p style="text-align: justify;">Tabel berikut merangkum semua operator assignment dalam bahasa Java:.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-success text-center">
+                        <tr>
+                          <th class="table-secondary">Operator</th>
+                          <th class="table-secondary">Contoh</th>
+                          <th class="table-secondary">Penjelasan</th>
+                        </tr>
+                        <tr>
+                          <td>+=</td>
+                          <td class="text-center">a += b</td>
+                          <td> 	a = a + b</td>
+                        </tr>
+                        <tr>
+                          <td>-=</td>
+                          <td class="text-center">a -= b</td>
+                          <td> 	a = a - b</td>
+                        </tr>
+                        <tr>
+                          <td>*=</td>
+                          <td class="text-center">a *= b</td>
+                          <td> 	a = a * b</td>
+                        </tr>
+                        <tr>
+                          <td>/=</td>
+                          <td class="text-center">a /= b</td>
+                          <td> 	a = a / b</td>
+                          </tr>
+                        <tr>
+                          <td>%=</td>
+                          <td class="text-center">a %= b</td>
+                          <td> 	a = a % b</td>
+                          </tr>
+                        <tr>
+                          <td>&=</td>
+                          <td class="text-center">a &= b</td>
+                          <td> 	a = a & b</td>
+                          </tr>
+                        <tr>
+                          <td>|=</td>
+                          <td class="text-center">a |= b</td>
+                          <td> 	a = a | b</td>
+                          </tr>
+                        <tr>
+                          <td>^=</td>
+                          <td class="text-center">a ^= b</td>
+                          <td> 	a = a ^ b</td>
+                          </tr>
+                        <tr>
+                          <td><<=</td>
+                          <td class="text-center">a<<=b</td>
+                          <td> 	a = a<<b</td>
+                          </tr>
+                        <tr>
+                          <td>>>=</td>
+                          <td class="text-center">a>>=b</td>
+                          <td> a = a>>b</td>
+                          </tr>
+                      </table>
+                    </table>
+                    </div>
+                    <hr>
+
+                    <strong>Contoh Kode Program Operator Assignment Gabungan Bahasa Java</strong>
+                        <p style="text-align: justify;">Berikut contoh praktek dari operator gabungan dalam bahasa Java:</p>
+                        <div class="card w-90 bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Main.java</h5>
+                                <div class="card-body fs-5">
+                                    <pre>
+                                <code class="language-java">
+class Main {
+    public static void main(String args[]){
+            
+        int a = 10, b = 10, c = 10, d = 10, e = 10, f = 10; 
+        
+        System.out.println("Operator assignment gabungan bahasa Java");  
+        System.out.println("========================================"); 
+        System.out.println("Variabel a, b, c, d, e, f = 10 \n"); 
+    
+        a += 5;
+        System.out.println("Hasil operasi a += 5: "+ a);
+        
+        b -= 3;
+        System.out.println("Hasil operasi b -= 3: "+ b);
+        
+        c *= 3;
+        System.out.println("Hasil operasi c *= 3: "+ c);
+        
+        d /= 3;
+        System.out.println("Hasil operasi d /= 3: "+ d);
+        
+        e %= 3;
+        System.out.println("Hasil operasi e %= 3: "+ e);
+        
+        f <<= 2;
+        System.out.println("Hasil operasi f <<= 2: "+ f);
+            
+    }
+}
+                                </code>
+                            </pre>
+                            <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4-12" aria-controls="offcanvasRight4-12">Coba Sendiri</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight4-12" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body h-100">
+                        <pre>
+                            <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]){
+            
+        int a = 10, b = 10, c = 10, d = 10, e = 10, f = 10; 
+        
+        System.out.println("Operator assignment gabungan bahasa Java");  
+        System.out.println("========================================"); 
+        System.out.println("Variabel a, b, c, d, e, f = 10 \n"); 
+    
+        a += 5;
+        System.out.println("Hasil operasi a += 5: "+ a);
+        
+        b -= 3;
+        System.out.println("Hasil operasi b -= 3: "+ b);
+        
+        c *= 3;
+        System.out.println("Hasil operasi c *= 3: "+ c);
+        
+        d /= 3;
+        System.out.println("Hasil operasi d /= 3: "+ d);
+        
+        e %= 3;
+        System.out.println("Hasil operasi e %= 3: "+ e);
+        
+        f <<= 2;
+        System.out.println("Hasil operasi f <<= 2: "+ f);
+            
+    }
+}
+                            </code>
+                        </pre>
+                        <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                        <p style="text-align: justify;">Dalam kode program ini terdapat 6 buah operator assignment gabungan. Variabel a, b, c, d, e, dan f semuanya diisi dengan nilai awal 10, kemudian di proses dengan berbagai operator <i>assignment gabungan</i>.</p>
+                        <hr>
+
+                        <div class="card latihan mt-2">
+                          <h5 class="card-header">Latihan <a class="btn btn-secondary ms-2" data-bs-toggle="collapse" href="#collapsePetunjuk" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="fa-solid fa-circle-info"></i> Petunjuk Pengerjaan
+                          </a></h5>
+                          <div class="card-body">                    
+                            <div class="collapse show" id="collapsePetunjuk">
+                              <div class="card">
+                              <h5 class="card-header">Petunjuk Mengerjakan Latihan</h5>
+                              <div class="card-body">
+                                <ol>
+                                  <li>Jawablah soal-soal dibawah ini dengan mengisikannya pada inputan yang tersedia.</li>
+                                  <li>Tekan tombol cek jawaban untuk mencek jawaban.</li>
+                                  <li>Apabila inputan berwana <b class="text-danger">Merah</b> jawaban salah, dan apabila berwana <b class="text-success">Hijau</b> jawaban benar.</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                            <ol>
+                              <li class="mt-4">Lengkapilah bagian yang kosong pada kode program berikut ini untuk mencetak <b>value dari variabel Nama</b> dengan menggunakan operator, kemudian yang akan dicetak <b>"Nama saya adalah Fulan"</b> !</li>
+                              <div class="card latihan p-3">
+                                <code class="text-dark lh-lg">
+                                class Main {<br>
+                                  &emsp;&emsp;public static void main(String args[]) {<br>
+                                &emsp;<br>
+                                &emsp;&emsp;&emsp;nama = "Fulan";<br>
+                                &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer1" maxlength="30" size="30" placeholder="..." />
+                                ("<input type="text" class="m-1 jawab" id="answer2" maxlength="30" size="30" placeholder="..." />");<br>
+                                &emsp;}<br>
+                                  }
+                                </code>
+                              </div>
+
+                              <li class="mt-4">Lengkapilah program Java berikut untuk membuat nilai yang awalnya 5 menjadi 6 menggunakan operator <i>increment</i>, kemudian yang akan dicetak <b>"Nilai dari variabel x sekarang adalah 6"</b></li>
+                              <div class="card latihan p-3">
+                                <code class="text-dark lh-lg">
+                                  class Main {<br>
+                                    &emsp;&emsp;public static void main(String args[]) {<br>
+                                  &emsp;<br>
+                                  &emsp;&emsp;&emsp;&emsp;int x = 5; <br> 
+                                  &emsp;&emsp;&emsp;&emsp;<input type="text" class="m-1 jawab" id="answer3" maxlength="8" size="8" placeholder="..." />;<br> <br>
+                                  &emsp;&emsp;&emsp;&emsp;<input type="text" class="m-1 jawab" id="answer4" maxlength="30" size="30" placeholder="..." />
+                                  ("<input type="text" class="m-1 jawab" id="answer5" maxlength="45" size="45" placeholder="..." />");<br>
+                                  &emsp;&emsp;<br>
+                                    &emsp;}<br>
+                                  }
+                                </code>
+                              </div>
+
+                              <li class="mt-4">Lengkapilah program Java berikut untuk menggunakan operator perbandingan yang benar untuk memeriksa apakah 5 tidak sama dengan 15, kemudian cetak keterangan bahwa <b>"5 tidak sama dengan 15"</b> !</li>
+                              <div class="card latihan p-3">
+                                <code class="text-dark lh-lg">
+                                      class Main {<br>
+                                        &emsp;&emsp;public static void main(String args[]) {<br>
+                                      &emsp;<br>
+                                      &emsp;&emsp;&emsp;if 5 <input type="text" class="m-1 jawab" id="answer6" maxlength="5" size="5" placeholder="..." /> 15;<br>
+                                      &emsp;&emsp;&emsp;<input type="text" class="m-1 jawab" id="answer7" maxlength="30" size="30" placeholder="..." />
+                                      ("<input type="text" class="m-1 jawab" id="answer8" maxlength="30" size="30" placeholder="..." />");<br>
+                                      &emsp;}<br>
+                                      }
+                                    </code>
+                              </div>
+                              <li class="mt-4"> Lengkapilah program Java berikut untuk menggunakan operator logika yang benar untuk memeriksa apakah setidaknya satu dari dua pernyataan yang benar. Kemudian cetak keterangan bahwa <b>"Setidaknya satu dari pernyataan itu benar"</b> !</li>
+                              <div class="card latihan p-3">
+                                <code class="text-dark lh-lg">
+                                  class Main {<br>
+                                    &emsp;&emsp;public static void main(String args[]) {<br>
+                                  &emsp;<br>
+                                  &emsp;&emsp;&emsp;if 5 == 15 <input type="text" class="m-1 jawab" id="answer9" maxlength="5" size="5" placeholder="..." /> 10 == 10;<br>
+                                  &emsp;&emsp;&emsp;<input type="text" class="m-1 jawab" id="answer10" maxlength="30" size="30" placeholder="..." />
+                                  ("<input type="text" class="m-1 jawab" id="answer11" maxlength="50" size="50" placeholder="..." />");<br>
+                                  &emsp;}<br>
+                                  }
+                                  </code>
+                              </div>
+                              <li class="mt-4">Lengkapilah program Java berikut untuk menggunakan operator assignment untuk menggabungkan kata <b>Hello dan World</b> dan memperbaharui string. Kemudian cetak <b>"Kata:  " + kata</b>; !</li>
+                              <div class="card latihan p-3">
+                                <code class="text-dark lh-lg">
+                                  class Main {<br>
+                                    &emsp;&emsp;public static void main(String args[]) {<br>
+                                  &emsp;<br>
+                                  &emsp;&emsp;&emsp;String kata = "Hello";<br>
+                                  &emsp;&emsp;&emsp;kata  <input type="text" class="m-1 jawab" id="answer12" maxlength="5" size="5" placeholder="..." /> "World";<br>
+                                  &emsp;&emsp;&emsp;<input type="text" class="m-1 jawab" id="answer13" maxlength="30" size="30" placeholder="..." />
+                                  ("<input type="text" class="m-1 jawab" id="answer14" maxlength="30" size="30" placeholder="..." />");<br>
+                                  &emsp;}<br>
+                                  }
+                                </code>
+                              </div>
+                            </ol>
+                            <button type="button" onclick="cekJawaban()" class="btn btn-sm btn-outline-primary">Cek Jawaban</button>
+                          </div>
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+                    <!-- akhir poin 7 -->
+                </div>
+                <div class="prevNext d-grid gap-2 d-md-flex justify-content-between mt-3">
+                    <a href="/page/materi4_sub6.html" class="btn btn-outline-info px-4">
+                        <span style="font-size: 1em">
+                            <i class='bx bx-left-arrow-alt'></i>
+                        </span>
+                        PREV
+                    </a>
+                    <a href="/page/petunjukkuis_materi4.html">
+                        <button id="next" class="btn btn-outline-info px-4 float-right ">
+                            NEXT
+                            <span style="font-size: 1em">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  
+    <!-- Ace Editor Java -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/ace.min.js" integrity="sha512-VDk4SZZXv8Karl+tl3RKw3grEZ0ofFrh7J5IKnVgP843O85vbeZv/npjEWtM9BhDuUHbtJc60ZpR4wjiYTfC7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/mode-java.min.js" integrity="sha512-dAGTKAA1p8e4hYvchE5NLx6G7uv3nwuRNHpazHyO0LzdqKqArrm16asxFILrjz6dy8BhDrlMNRFHTfqDVCW/sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/theme-monokai.min.js" integrity="sha512-8rSB/wU3KoN3rr1VHwPP4dfpbU063BvH6qzwt0oe9E2ThEchzd8MmJylVPxZ5kLvxsShgtWvc9AtIlS7rmPunA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- <script src="/page/paginator.js"></script>
+    <script src="/page/cek_pemahaman.js"></script> -->
+    <script src="/page/latihan_materi4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+  
+    <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e)=>{
+     let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+     arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("close");
+    });
+  </script>
+  <script src="/page/simpandata.js"></script>
+  <script type="module" src="/page/lockData.js"></script>
+  </body>
+  </html>

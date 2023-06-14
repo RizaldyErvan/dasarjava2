@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="stylemateri.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+     <!-- Unicons CSS -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+     <!-- Highlightjs -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+     <!-- Font Editor -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+      <!-- Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
+
+   <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>
+
+   </head>
+<body>
+  <div class="sidebar open">
+    <div class="logo-details">
+      <img src="/assets/img/JavaTiKom.png" width="50" height="50"/>
+
+      <span class="logo_name">Javatikom</span>
+    </div>
+    <hr>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="/page/home.html">
+            <i class='bx bxs-home'></i>
+            <span class="link_name">Home</span>
+          </a>
+        </div>
+        
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Materi 1</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 1</a></li>
+          <li><a href="/page/materi1_sub1.html">Pengantar Java</a></li>
+          <li><a href="/page/materi1_sub2.html">Sintaks Java</a></li>
+          <li><a href="/page/materi1_sub3.html">Output Java</a></li>
+          <li><a href="/page/petunjukkuis_materi1.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Materi 2</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri2" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 2</a></li>
+          <li><a href="/page/materi2_sub1.html">Pengantar Variabel</a></li>
+          <li><a href="/page/materi2_sub2.html">Variabel Cetak</a></li>
+          <li><a href="/page/materi2_sub3.html">Deklarasi Banyak Variabel</a></li>
+          <li><a href="/page/materi2_sub4.html">Variabel Identifier</a></li>
+          <li><a href="/page/materi2_sub5.html">Variabel Konstanta</a></li>
+          <li><a href="/page/petunjukkuis_materi2.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link aktif">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 3</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri3" ></i>
+        </div>
+        <ul class="sub-menu menuAktif">
+          <li><a class="link_name" href="#">Materi 3</a></li>
+          <li><a href="/page/materi3_sub1.html">Pengantar Tipe Data Java</a></li>
+          <li><a href="/page/materi3_sub2.html">Jenis-Jenis Tipe Data</a></li>
+          <li><a href="/page/materi3_sub3.html">Tipe Data Integer</a></li>
+          <li><a href="/page/materi3_sub4.html">Floating-point</a></li>
+          <li><a href="/page/materi3_sub5.html">Tipe Data Boolean</a></li>
+          <li><a href="/page/materi3_sub6.html">Tipe Data Character</a></li>
+          <li><a href="/page/materi3_sub7.html">Tipe Data String</a></li>
+          <li><a href="/page/materi3_sub8.html" class="aktif2">Tipe Data Array</a></li>
+          <li><a href="/page/petunjukkuis_materi3.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 4</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri4" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 4</a></li>
+          <li><a href="/page/materi4_sub1.html">Pengantar Operator</a></li>
+          <li><a href="/page/materi4_sub2.html">Jenis-Jenis Operator</a></li>
+          <li><a href="/page/materi4_sub3.html">Aritmatika</a></li>
+          <li><a href="/page/materi4_sub4.html">Increment dan Decrement</a></li>
+          <li><a href="/page/materi4_sub5.html">Perbandingan Relasionak</a></li>
+          <li><a href="/page/materi4_sub6.html">Logika / Boolean</a></li>
+          <li><a href="/page/materi4_sub7.html">Assignment</a></li>
+          <li><a href="/page/petunjukkuis_materi4.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 5</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri5" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 5</a></li>
+          <li><a href="/page/materi5_sub1.html">Perintah IF</a></li>
+          <li><a href="/page/materi5_sub2.html">Perintah Switch</a></li>
+          <li><a href="/page/materi5_sub3.html">Perintah For</a></li>
+          <li><a href="/page/materi5_sub4.html">Perintah While</a></li>
+          <li><a href="/page/materi5_sub5.html">Perintah Do While</a></li>
+          <li><a href="/page/materi5_sub6.html">Perintah Break</a></li>
+          <li><a href="/page/materi5_sub7.html">Perintah Continue</a></li>
+          <li><a href="/page/petunjukkuis_materi5.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 6</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri6" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 6</a></li>
+          <li><a href="/page/materi6_sub1.html">Pengertian Methods</a></li>
+          <li><a href="/page/materi6_sub2.html">Parameter dan Argumen <br> Method</a></li>
+          <li><a href="/page/materi6_sub3.html">Perintah Return <br>Bahasa Java</a></li>
+          <li><a href="/page/materi6_sub4.html">Variabel Scope</a></li>
+          <li><a href="/page/petunjukkuis_materi6.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="/page/petunjuk_evaluasi.html">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+        </div>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name" id="nama_mahasiswa"></div>
+        <div class="job" id="nim_mahasiswa"></div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text">Dasar-Dasar Pemrograman Java</span>
+      <a href="/page/home.html">
+        <i class='bx bx-home-smile'></i>
+      </a>
+    </div>
+
+    <div class="konten">
+      <div class="materi">
+        <!-- <div class="alert alert-light text-center" role="alert">
+          Materi 1 - Definisi Bahasa Pemrograman Java
+        </div> -->
+        <div class="tab-content card p-3">
+            <h1>Pengenalan Tipe Data Pemrograman Java</h1>
+            <hr>
+        <div class="accordion mb-2" id="accordionTujpem">
+            <div class="card">
+              <div class="card-header" id="headingTujpem">
+                <h5 class="mb-0">
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#tujpem" aria-expanded="true" aria-controls="tujpem">
+                    <strong> Tujuan Pembelajaran </strong>
+                  </button>
+                </h5>
+              </div>
+              <div class="card-body" id="cardtujpem">
+                <ul>
+                  <li>Mahasiswa mampu menerangkan apa itu Tipe Data pada Java</li>
+                    <li>Mahasiswa membedakan penggunaan berbagai macam Tipe Data pada Java</li>
+                    <li>Mahasiswa mampu menerapkan berbagai macam Tipe Data pada Java</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+            
+            <!-- <p>Bacalah <b style="color: #9B2915;">definisi</b> di bawah ini!</p> -->
+
+            <div class="card my-2 shadow">
+                <div class="card-body" style="background-color: #fffbdb">
+
+                     <!-- poin 8 -->
+                     <div id="delapan">
+                        <h5>H. Tipe Data Array</h5>
+                        <!-- <p class="text-align: left;"><b>Operasi I/O Pemrograman Java</b></p> -->
+                        <p style="text-align: justify;">Tipe data <b><i>array</i></b> adalah tipe data yang terdiri dari kumpulan tipe data lain. Dalam bahasa Indonesia, <b><i>array</i></b> dikenal juga dengan istilah <b>Larik</b>. Dengan <b><i>array</i></b>, proses penyimpanan data ke dalam variabel menjadi lebih efisien dan mudah, terutama jika memiliki data dalam jumlah banyak.</p>
+                                    <p style="text-align: justify;">Anggota atau isi dari <b><i>array</i></b> itu sendiri harus satu jenis tipe data, misalkan terdiri dari kumpulan angka bulat saja (<b><i>integer</i></b>), kumpulan karakter saja (<b><i>char</i></b>), maupun kumpulan angka pecahan saja (<b><i>double</i></b>). Di dalam bahasa Java, kita tidak bisa membuat 1 <b><i>array</i></b> dengan berbagai tipe data (harus 1 jenis saja).</p>
+                                    <p style="text-align: justify;">Sebagai contoh, misalnya kita ingin menyimpan 5 buah nilai siswa. Tanpa array, maka harus menyiapkan 5 buah variabel:</p>
+                                    <pre>
+                                      <code>
+int nilai1, nilai2, nilai3, nilai4, nilai5;
+                                      </code>
+                                    </pre>
+                                    <p style="text-align: justify;">Jika menggunakan array, pendefinisian variabel cukup seperti ini:</p>
+                                    <pre>
+                                      <code>
+int[] nilai = new int[5];
+                                      </code>
+                                    </pre>
+                                    <p style="text-align: justify;">Atau bagaiman jika ingin 1000 nilai? tidak masalah:</p>
+                                    <pre>
+                                      <code>
+int[] nilai = new int[1000];
+                                      </code>
+                                    </pre>
+                                    <p style="text-align: justify;">Tentu jauh lebih efisien dibandingkan membuat 1000 buah variabel.</p>
+                                    <hr>
+                                    <p class="text-align: left;"><b>Cara Pembuatan Tipe Data Array</b></p>
+                                    <p style="text-align: justify;">Ciri khas pembuatan tipe data array adalah dengan tanda kurung siku ” <b>[ ]</b> “. Tanda kurung siku ini ditempatkan setelah penulisan tipe data. Misalnya saya ingin membuat array <b>nama</b> yang terdiri dari tipe data <b><i>String</i></b>, maka perintahnya adalah:</p>
+                                    <pre>
+                                      <code>
+string[] nama;
+                                      </code>
+                                    </pre>
+                                    <p style="text-align: justify;">Atau jika ingin membuat <b><i>array</i></b> nilai dari tipe data <b><i>char</i></b>, maka penulisannya adalah:</p>
+                                    <pre>
+                                      <code>
+char[] nilai;
+                                      </code>
+                                    </pre>
+                                    <p style="text-align: justify;">Namun ini baru sebatas <b>deklarasi</b> saja, agar bisa digunakan kita harus sambung dengan proses <b>instansiasi</b> dan <b>inisialisasi</b>.</p>
+                                    <p style="text-align: justify;"><b>Deklarasi</b> adalah istilah untuk menyebut proses pembuatan variabel, dimana kita meminta compiler Java agar menyiapkan tempat di memory komputer untuk sebuah variabel. <b>Inisialisasi</b> sendiri adalah proses pemberian nilai awal ke variabel tersebut.</p>
+                                    <p style="text-align: justify;">Perintah deklarasi dan inisialisasi ini sudah sering kita pakai sebelumnya dan biasa disambung dalam 1 baris perintah, seperti:</p>
+                                      <pre>
+                                        <code>
+  String var1 = "Belajar Java Online"
+                                        </code>
+                                      </pre>
+                                      <p style="text-align: justify;">Namun khusus untuk array, perlu tambahan <b>instansiasi</b>, yakni proses pembuatan object, secara sederhana perintah <b>instansiasi</b> ditandai dengan keyword <b>new</b>.</p>
+
+                                    <hr>
+                                    <strong>Cobalah kode program ini menggunakan <i>compiler</i></strong>
+                                    <div class="card w-90 bg-light">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Main.java</h5>
+                                        <div class="card-body fs-5">
+                                          <pre>
+                                            <code class="language-java">
+class Main {
+  public static void main(String args[]) {
+    // Deklarasi Tipe Data dan Variabel
+
+    int[] nilai;
+
+    nilai = new int[5];
+
+    nilai[0] = 23;
+    nilai[1] = 50;
+    nilai[2] = 34;
+    nilai[3] = 78;
+    nilai[4] = 90;
+
+    System.out.println(nilai[0]);
+    System.out.println(nilai[1]);
+    System.out.println(nilai[2]);
+    System.out.println(nilai[3]);
+    System.out.println(nilai[4]);
+  }
+}
+                                            </code>
+                                          </pre>
+
+                                          <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3-12" aria-controls="offcanvasRight3-12">Coba Sendiri</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight3-12" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body h-100">
+                                          <pre>
+                                            <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]) {
+        // Deklarasi Tipe Data dan Variabel
+    
+        int[] nilai;
+    
+        nilai = new int[5];
+    
+        nilai[0] = 23;
+        nilai[1] = 50;
+        nilai[2] = 34;
+        nilai[3] = 78;
+        nilai[4] = 90;
+    
+        System.out.println(nilai[0]);
+        System.out.println(nilai[1]);
+        System.out.println(nilai[2]);
+        System.out.println(nilai[3]);
+        System.out.println(nilai[4]);
+    }
+}
+                                            </code>
+                                          </pre>
+                                          <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                        </div>
+                                      </div>
+
+                                    
+                                    <p style="text-align: justify;">Di baris 4 adalah perintah <b>deklarasi</b>, dimana kita menyiapkan variabel <b>nilai</b> sebagai <b><i>array</i></b> bertipe data <b><i>integer</i></b>. Artinya variabel <b>nilai</b> hanya bisa diisi dengan angka bulat.</p>
+                                    <p style="text-align: justify;">Di baris 6 adalah perintah <b><i>instansiasi</i></b>, dimana kita mengisi <b><i>array</i></b> <b>nilai</b> agar bisa menampung 5 element atau 5 anggota array. Perintah yang dipakai adalah <b><i>new int[5]</i></b>.</p>
+                                    <p style="text-align: justify;">Kemudian kode program di baris 8 – 12 adalah proses <b><i>inisialisasi</i></b>, dimana saya memberikan nilai awal untuk 5 element <b><i>array</i></b> nilai. Angka dalam tanda kurung siku disebut sebagai <b><i>key</i></b> atau <b><i>index</i></b>. Di bahasa Java, sebuah <b><i>index array</i></b> dimulai dari angka 0. <b><i>Index</i></b> inilah yang dipakai untuk penanda posisi dari sebuah element <b><i>array</i></b>.</p>
+                                    <hr>
+                                    <strong>Cobalah kode program ini menggunakan <i>compiler</i></strong>
+                                    <div class="card w-90 bg-light">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Main.java</h5>
+                                        <div class="card-body fs-5">
+                                          <pre>
+                                            <code class="language-java">
+class Main {
+  public static void main(String args[]) {
+    // Deklarasi Tipe Data dan Variabel
+
+    String[] mahasiswa;
+
+    mahasiswa = new String[3];
+
+    nilai[0] = "Muhammad";
+    nilai[1] = "Fulan";
+    nilai[2] = "Maulana";
+
+    System.out.println(mahasiswa[0]);
+    System.out.println(mahasiswa[1]);
+    System.out.println(mahasiswa[2]);
+  }
+}
+                                            </code>
+                                          </pre>
+
+                                          <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3-13" aria-controls="offcanvasRight3-13">Coba Sendiri</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight3-13" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body h-100">
+                                          <pre>
+                                            <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]) {
+        // Deklarasi Tipe Data dan Variabel
+    
+        String[] mahasiswa;
+    
+        mahasiswa = new String[3];
+    
+        nilai[0] = "Muhammad";
+        nilai[1] = "Fulan";
+        nilai[2] = "Maulana";
+    
+        System.out.println(mahasiswa[0]);
+        System.out.println(mahasiswa[1]);
+        System.out.println(mahasiswa[2]);
+    }
+}
+                                            </code>
+                                          </pre>
+                                          <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                        </div>
+                                      </div>
+
+
+                                    <hr>
+                                    <p class="text-align: left;"><b>Cara Singkat Pembuatan Array</b></p>
+                                    <p style="text-align: justify;">Bahasa Java juga menyediakan cara alternatif untuk pembuatan array, salah satunya dengan menggabungkan proses deklarasi dan instansiasi.</p>
+                                    <strong>Cobalah kode program ini menggunakan <i>compiler</i></strong>
+                                    <div class="card w-90 bg-light">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Main.java</h5>
+                                        <div class="card-body fs-5">
+                                          <pre>
+                                            <code class="language-java">
+class Main {
+  public static void main(String args[]) {
+    // Deklarasi Tipe Data dan Variabel
+
+    int[] nilai = new int[5];
+
+    nilai[0] = 23;
+    nilai[1] = 50;
+    nilai[2] = 34;
+    nilai[3] = 78;
+    nilai[4] = 90;
+
+    System.out.println(nilai[0]);
+    System.out.println(nilai[1]);
+    System.out.println(nilai[2]);
+    System.out.println(nilai[3]);
+    System.out.println(nilai[4]);
+  }
+}
+                                            </code>
+                                          </pre>
+
+                                          <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3-14" aria-controls="offcanvasRight3-14">Coba Sendiri</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight3-14" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body h-100">
+                                          <pre>
+                                            <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]) {
+        // Deklarasi Tipe Data dan Variabel
+    
+        int[] nilai = new int[5];
+    
+        nilai[0] = 23;
+        nilai[1] = 50;
+        nilai[2] = 34;
+        nilai[3] = 78;
+        nilai[4] = 90;
+    
+        System.out.println(nilai[0]);
+        System.out.println(nilai[1]);
+        System.out.println(nilai[2]);
+        System.out.println(nilai[3]);
+        System.out.println(nilai[4]);
+    }
+}
+                                            </code>
+                                          </pre>
+                                          <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                        </div>
+                                      </div>
+
+
+                                    <p style="text-align: justify;">Kode program ini sangat mirip seperti contoh kita sebelumnya. Perbedaan ada di baris 4, dimana menggabungkan proses deklarasi <b><i>array siswa</i></b> dengan proses instansiasi untuk mengisi element <b><i>array</i></b> dengan object <b><i>int</i></b>.</p>
+                                    <p style="text-align: justify;">Java juga mengizinkan pembuatan <b><i>array</i></b> dengan gabungan deklarasi dan inisialisasi nilai awal. Untuk format penulisan ini kita malah tidak butuh proses instansiasi:</p>
+                                    <strong>Cobalah kode program ini menggunakan <i>compiler</i></strong>
+                                    <div class="card w-90 bg-light">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Main.java</h5>
+                                        <div class="card-body fs-5">
+                                          <pre>
+                                            <code class="language-java">
+class Main {
+  public static void main(String args[]) {
+    // Deklarasi Tipe Data dan Variabel
+
+    int[] nilai = {23, 50, 34, 78, 90};
+
+    System.out.println(nilai[0]);
+    System.out.println(nilai[1]);
+    System.out.println(nilai[2]);
+    System.out.println(nilai[3]);
+    System.out.println(nilai[4]);
+  }
+}
+                                            </code>
+                                          </pre>
+
+                                          <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3-15" aria-controls="offcanvasRight3-15">Coba Sendiri</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight3-15" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body h-100">
+                                          <pre>
+                                            <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]) {
+        // Deklarasi Tipe Data dan Variabel
+    
+        int[] nilai = {23, 50, 34, 78, 90};
+    
+        System.out.println(nilai[0]);
+        System.out.println(nilai[1]);
+        System.out.println(nilai[2]);
+        System.out.println(nilai[3]);
+        System.out.println(nilai[4]);
+    }
+}
+                                            </code>
+                                          </pre>
+                                          <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                        </div>
+                                      </div>
+
+                                    <p style="text-align: justify;">Perhatikan perintah di baris 4, disini membuat <b><i>array</i></b> nilai dengan tipe data <b><i>integer</i></b> (<b><i>deklarasi</i></b>) dan langsung memberikan nilai awal (<b><i>inisialiasi</i></b>).</p>
+                                    <p style="text-align: justify;">Dengan format ini, kita tidak perlu melakukan proses <b><i>instansiasi</i></b>, dan Java langsung menetapkan jumlah element <b><i>array</i></b> sesuai dengan jumlah nilai yang ingin diinput. Proses pemberian nilai ini dilakukan dengan tanda kurung kurawal <b>{}</b>.</p>
+                                    <hr>
+                                    <p class="text-align: left;"><b>Proses Input Element Array</b></p>
+                                    <p style="text-align: justify;">Setelah <b><i>array</i></b> dibuat dan diberi nilai awal, kita tetap bisa mengubah isi dari <b><i> element array</i></b> tersebut. Caranya sama seperti mengisi nilai ke dalam variabel biasa, hanya saja sekarang kita harus tentukan nomor <b><i>index</i></b> atau <b><i>key</i></b> dari <b><i>array</i></b>.</p>
+                                    <strong>Cobalah kode program ini menggunakan <i>compiler</i></strong>
+                                    <div class="card w-90 bg-light">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Main.java</h5>
+                                        <div class="card-body fs-5">
+                                          <pre>
+                                            <code class="language-java">
+class Main {
+  public static void main(String args[]) {
+    // Deklarasi Tipe Data dan Variabel
+
+    String[] mahasiswa = {"Muhammad", "Fulan", "Fulanah"};
+
+    mahasiswa[1] = "Ade";
+
+    System.out.println(mahasiswa[0]);
+    System.out.println(mahasiswa[1]);
+    System.out.println(mahasiswa[2]);
+  }
+}
+                                            </code>
+                                          </pre>
+
+                                          <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3-16" aria-controls="offcanvasRight3-16">Coba Sendiri</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight3-16" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body h-100">
+                                          <pre>
+                                            <code class="language-java pe-none">
+class Main {
+    public static void main(String args[]) {
+        // Deklarasi Tipe Data dan Variabel
+    
+        String[] mahasiswa = {"Muhammad", "Fulan", "Fulanah"};
+    
+        mahasiswa[1] = "Ade";
+    
+        System.out.println(mahasiswa[0]);
+        System.out.println(mahasiswa[1]);
+        System.out.println(mahasiswa[2]);
+    }
+}
+                                            </code>
+                                          </pre>
+                                          <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                        </div>
+                                      </div>
+
+
+                                    <p style="text-align: justify;">Di baris 4 kita membuat array siswa dan memberikan nilai awal untuk 3 element. Kemudian di baris 6, nilai dari element kedua yakni <b>siswa[1]</b> ingin saya tukar menjadi “<b>Ade</b>“.</p>
+                                    <hr>
+                                    
+                                    <div class="card latihan mt-2">
+                                      <h5 class="card-header">Latihan <a class="btn btn-secondary ms-2" data-bs-toggle="collapse" href="#collapsePetunjuk" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="fa-solid fa-circle-info"></i> Petunjuk Pengerjaan
+                                      </a></h5>
+                                      <div class="card-body">                    
+                                        <div class="collapse show" id="collapsePetunjuk">
+                                          <div class="card">
+                                          <h5 class="card-header">Petunjuk Mengerjakan Latihan</h5>
+                                          <div class="card-body">
+                                            <ol>
+                                              <li>Jawablah soal-soal dibawah ini dengan mengisikannya pada inputan yang tersedia.</li>
+                                              <li>Tekan tombol cek jawaban untuk mencek jawaban.</li>
+                                              <li>Apabila inputan berwana <b class="text-danger">Merah</b> jawaban salah, dan apabila berwana <b class="text-success">Hijau</b> jawaban benar.</li>
+                                            </ol>
+                                          </div>
+                                        </div>
+                                      </div>
+                                        <ol>
+                                          <li class="mt-4">Lengkapilah bagian yang kosong pada kode program berikut ini untuk menambahkan <b>tipe data</b> sesuai dengan value dari <b>variabel angka</b>. Kemudian cetak <b>variabel angka</b>!</li>
+                                          <div class="card latihan p-3">
+                                            <code class="text-dark lh-lg">
+                                            class Main {<br>
+                                              &emsp;&emsp;public static void main(String args[]) {<br>
+                                            &emsp;<br>
+                                            &emsp;<input type="text" class="m-1 jawab" id="answer1" maxlength="10" size="10" placeholder="..." /> angka = 130000000;<br>
+                                            &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer2" maxlength="30" size="30" placeholder="..." />
+                                            (<input type="text" class="m-1 jawab" id="answer3" maxlength="8" size="8" placeholder="..." />);<br>
+                                            &emsp;}<br>
+                                              }
+                                            </code>
+                                          </div>
+
+                                          <li class="mt-4">Lengkapilah program Java berikut untuk mengisi tipe data yang variabelnya sudah ditentukan. Berikan tipe data <b>float</b> untuk variabel <b>angka1</b>,  berikan tipe data <b>double</b> untuk variabel <b>angka2</b>, berikan tipe data <b>char</b> untuk variabel <b>nilai</b>, berikan tipe data <b>String</b> untuk variabel <b>kota</b>, kemudian cetak variabel <b>kota</b>!</li>
+                                          <div class="card latihan p-3">
+                                            <code class="text-dark lh-lg">
+                                              class Main {<br>
+                                                &emsp;&emsp;public static void main(String args[]) {<br>
+                                              &emsp;<br>
+                                              &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer4" maxlength="8" size="8" placeholder="..." /> angka1 = 3.14F;<br> 
+                                              &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer5" maxlength="8" size="8" placeholder="..." /> angka2 = 183.26D;<br> 
+                                              &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer6" maxlength="8" size="8" placeholder="..." /> nilai = 'A';<br> 
+                                              &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer7" maxlength="8" size="8" placeholder="..." /> kota = "Banjarmasin";<br><br>
+                                              &emsp;&emsp;<input type="text" class="m-1 jawab" id="answer8" maxlength="30" size="30" placeholder="..." />
+                                              (<input type="text" class="m-1 jawab" id="answer9" maxlength="15" size="15" placeholder="..." />);<br>
+                                              &emsp;&emsp;<br>
+                                                &emsp;}<br>
+                                              }
+                                            </code>
+                                          </div>
+
+                                          <li class="mt-4">Lengkapilah program Java berikut untuk mengubah tipe data <i>int (myInteger)</i> menjadi tipe data <i>double</i> !</li>
+                                          <div class="card latihan p-3">
+                                            <code class="text-dark lh-lg">
+                                                  class Main {<br>
+                                                    &emsp;&emsp;public static void main(String args[]) {<br>
+                                                  &emsp;<br>
+                                                  &emsp;&emsp;&emsp;int myInteger = 131826;<br>
+                                                  &emsp;&emsp;&emsp;double myDouble = <input type="text" class="m-1 jawab" id="answer10" maxlength="5" size="5" placeholder="..." />;<br>
+                                                  &emsp;}<br>
+                                                  }
+                                                </code>
+                                          </div>
+                                          <li class="mt-4"> Lengkapilah program Java berikut untuk membuat array dengan tipe data <i>String</i> variabelnya <i>motor</i>. Kemudian cetak array ke-1!</li>
+                                          <div class="card latihan p-3">
+                                            <code class="text-dark lh-lg">
+                                                class Main {<br>
+                                                  &emsp;&emsp;public static void main(String args[]) {<br>
+                                                &emsp;<br>
+                                                &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer11" maxlength="10" size="10" placeholder="..." />
+                                                <input type="text" class="m-1 jawab" id="answer12" maxlength="10" size="10" placeholder="..." /> = {"Xsr", "CBR", "KLX"};<br><br>
+                                               &emsp;&emsp;&emsp; System.out.println<input type="text" class="m-1 jawab" id="answer13" maxlength="15" size="15" placeholder="..." />;<br>
+                                                  &emsp;}<br>
+                                                }
+                                              </code>
+                                          </div>
+                                          <li class="mt-4">Lengkapilah program Java berikut untuk membuat perulangan array dalam array <i>mobil</i> !</li>
+                                          <div class="card latihan p-3">
+                                            <code class="text-dark lh-lg">
+                                              class Main {<br>
+                                                &emsp;&emsp;public static void main(String args[]) {<br>
+                                              &emsp;<br>
+                                              &emsp;&emsp;String[] mobil = {"Civic", "Avanza", "HRV"};
+                                                &emsp;<br>
+                                              &emsp;&emsp; <input type="text" class="m-1 jawab" id="answer14" maxlength="5" size="5" placeholder="..." />
+                                              (String i: <input type="text" class="m-1 jawab" id="answer15" maxlength="5" size="5" placeholder="..." />) { <br> 
+                                              &emsp;&emsp;&emsp;&emsp; System.out.println(i);<br>
+                                                &emsp;&emsp;}<br>
+                                                &emsp;}<br>
+                                              }
+                                            </code>
+                                          </div>
+                                        </ol>
+                                        <button type="button" onclick="cekJawaban()" class="btn btn-sm btn-outline-primary">Cek Jawaban</button>
+                                      </div>
+                                    </div>
+                        
+                    </div>
+                    <!-- akhir poin 8 -->
+                </div>
+            </div>
+            <div class="prevNext d-grid gap-2 d-md-flex justify-content-between mt-3">
+                <a href="/page/materi3_sub7.html" class="btn btn-outline-info px-4">
+                    <span style="font-size: 1em">
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </span>
+                    PREV
+                </a>
+                <a href="/page/petunjukkuis_materi3.html">
+                    <button id="next" class="btn btn-outline-info px-4 float-right ">
+                        NEXT
+                        <span style="font-size: 1em">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  
+    <!-- Ace Editor Java -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/ace.min.js" integrity="sha512-VDk4SZZXv8Karl+tl3RKw3grEZ0ofFrh7J5IKnVgP843O85vbeZv/npjEWtM9BhDuUHbtJc60ZpR4wjiYTfC7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/mode-java.min.js" integrity="sha512-dAGTKAA1p8e4hYvchE5NLx6G7uv3nwuRNHpazHyO0LzdqKqArrm16asxFILrjz6dy8BhDrlMNRFHTfqDVCW/sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/theme-monokai.min.js" integrity="sha512-8rSB/wU3KoN3rr1VHwPP4dfpbU063BvH6qzwt0oe9E2ThEchzd8MmJylVPxZ5kLvxsShgtWvc9AtIlS7rmPunA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="/page/paginator.js"></script>
+    <script src="/page/cek_pemahaman.js"></script>
+    <script src="/page/latihan_materi3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+  
+    <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e)=>{
+     let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+     arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("close");
+    });
+  </script>
+  <script src="/page/simpandata.js"></script>
+  <script type="module" src="/page/lockData.js"></script>
+  </body>
+  </html>

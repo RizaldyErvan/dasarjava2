@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="/page/styles.css">
+
+
+    <title>Login dan Register</title>
+</head> 
+
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="#" class="sign-in-form">
+                <h2 class="title">Login Mahasiswa</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="NIM" id="nim_signin2">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="psw_signin2" autocomplete="new-password">
+                </div>
+                <input type="button" value="Login" class="btn " id="signin-button">
+                <a href="login_dosen.html">
+                    <button type="button" class="btn btn-primary">Login Sebagai Dosen</button>
+                    <!-- <input type="submit" value="Login Sebagai Dosen" class="btn " id="signin-button-dosen">  -->
+                </a>
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Register</a></p>
+            </form>
+            <form action="#" class="sign-up-form">
+                <h2 class="title">Register Mahasiswa</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="NIM" id="nim_signup">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Nama Lengkap" id="nama">
+                </div>
+                
+            
+                
+                <!-- <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div> -->
+                <!-- <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div> -->
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Masukkan Password" id="psw_signup" autocomplete="new-password">
+                </div>
+                <select class="form-select bg-body-tertiary" id="kelasInp" required="">
+                    <option value="" selected hidden>Pilih  Kelas</option>
+                </select>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Token" id="tokenkelas">
+                </div>
+
+                
+                <!-- <select class="form-select bg-body-tertiary" id="kelasInp" required="">
+                    <option value="" selected hidden>Pilih  Kelas</option>
+                    <option value="A1">A1</option>
+                    <option value="A2 B">A2</option>
+                </select> -->
+                <input type="submit" value="Register" class="btn" id="signup-button">
+                <!-- <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div> -->
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Media Pembelajaran Interaktif <br> Dasar-Dasar Pemrograman Java</h3>
+                    <p>Silahkan Login jika sudah melakukan registrasi</p>
+                    <button class="btn" id="sign-in-btn">Login</button>
+                </div>
+                <img src="/assets/img/signin.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Media Pembelajaran Interaktif <br> Dasar-Dasar Pemrograman Java</h3>
+                    <p>Silahkan membuat akun terlebih dahulu, jika belum memiliki!</p>
+                    <a href="register_mahasiswa.html">
+                    <button class="btn" id="sign-up-btn">Register</button>
+                </a>
+                </div>
+                <img src="/assets/img/signup.svg" alt="" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="/page/login.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+        import { getDatabase, ref, onValue, set, update, child, get, remove, query } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCHi4hJbJCrM-no4yEc8yTMYwm_K65shJM",
+          authDomain: "dasarjava-4c937.firebaseapp.com",
+          databaseURL: "https://dasarjava-4c937-default-rtdb.firebaseio.com",
+          projectId: "dasarjava-4c937",
+          storageBucket: "dasarjava-4c937.appspot.com",
+          messagingSenderId: "391463504815",
+          appId: "1:391463504815:web:b86a0f3e8987018c50bd5a",
+          measurementId: "G-YNKGPL8WVZ"
+        };
+
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const db  = getDatabase();
+          const database = getDatabase(app);
+
+          // Referensi
+        const name = document.getElementById('nama');
+        const nim = document.getElementById('nim_signup');
+        const pass = document.getElementById('psw_signup');
+        const submit = document.getElementById('signup-button');
+        const kelas = document.getElementById('kelasInp');
+        // const token = document.getElementById('tokenKelas');
+
+        // const namefix = name.lo
+        // Validasi
+
+        //mengambil data kelas di db
+        const getKelas = new Promise((resolve, reject) => {
+            const antri = query(ref(db, "listKelas/"))
+            onValue(antri, (snapshot) => {
+                const kelasList = snapshot.val();
+                console.log(kelasList)
+                resolve(kelasList);
+            });
+        });
+        getKelas.then(kelas =>{
+            for (var key in kelas) {
+                if (kelas.hasOwnProperty(key)) { //untuk memeriksa apakah objek memiliki properti dengan nama tertentu
+                    var option = $('<option>').val(key).text(kelas[key].kelas);
+                        $('#kelasInp').append(option);
+                    }
+                }
+            }, function(error) {
+                console.log('Error:', error);
+        })
+
+        // Mencek input kosong 
+        function isEmptyOrSpace(str){
+            return str == null || str.match(/^ *$/) !== null;
+        }
+
+        function Validation(){
+            let nameregex = /^[a-zA-Z\s]+$/;
+
+            if(isEmptyOrSpace(name.value)||isEmptyOrSpace(nim.value)||isEmptyOrSpace(pass.value)){
+                swal ( "Data masih ada yang kosong" ,  "Mohon Cek Kembali Lagi" ,  "error" )
+                return false;
+            }
+            if(!nameregex.test(name.value)){
+                swal ( "Nama hanya bisa memuat huruf saja" ,  "" ,  "warning" )
+                return false;
+            }
+            return true;
+        }
+
+        // Register user to firbase
+        function RegisterUser(){
+            // if(!Validation()){
+            //     return;
+            // }
+            const dbRef = ref(db);
+
+            // Get mengambil data di fire base
+            get(child(dbRef, "UserMahasiswa/" + nim.value)).then((snapshot)=>{
+                if(snapshot.exists()){
+                    swal ( "NIM Sudah Terdaftar Sebelumnya" ,  "" ,  "warning" )
+                }else{
+
+                    // const token = document.getElementById("tokenKelas");
+                    // console.log(token)
+                    onValue(ref(db, "listKelas/"+ $("#kelasInp").val()), (snapshot) => {
+                        console.log(snapshot.val().token)
+                        console.log($("#tokenkelas").val())
+                        if((snapshot.val().token) == ($("#tokenkelas").val())){
+
+                            
+                    
+                            set(ref(db, "UserMahasiswa/" + nim.value),
+                            {
+                                nama : name.value,
+                                nim: nim.value,
+                                kelas: kelas.value,
+                                password: enchPass(),
+                                kuis: {
+                                    "kuis-1": {
+        
+                                        skor: "",
+                                        tanggal: "",
+                                        waktu: "",
+                                    },
+        
+                                    "kuis-2": {
+        
+                                        skor: "",
+                                        tanggal: "",
+                                        waktu: "",
+                                    },
+        
+                                    "kuis-3": {
+        
+                                        skor: "",
+                                        tanggal: "",
+                                        waktu: "",
+                                    },
+        
+                                    "kuis-4": {
+        
+                                        skor: "",
+                                        tanggal: "",
+                                        waktu: "",
+                                    },
+        
+                                    "kuis-5": {
+        
+                                        skor: "",
+                                        tanggal: "",
+                                        waktu: "",
+                                    },
+        
+                                    "kuis-6": {
+        
+                                        skor: "",
+                                        tanggal: "",
+                                        waktu: "",
+                                    },
+                                    
+                                },
+                                
+                                Evaluasi: {
+        
+                                    skor: "",
+                                    tanggal: "",
+                                    waktu: "",
+                                },
+                            })
+                            .then(()=>{
+                                swal ( "Selamat Akun Berhasil dibuat" ,  "" ,  "success" )
+                                .then(()=>{
+                                document.location.href  = "index.html";
+                                })
+                            })
+                            .catch((error)=>{
+                                alert("error" + error);
+                            })
+
+                    // set Mengirim value baru ke firebase
+                        }else{
+                            swal ( "Token Salah" ,  "" ,  "warning" )
+                        }
+                    });
+                }
+            });
+        }
+        // Encription password
+        function enchPass(){
+            var pass12 = CryptoJS.AES.encrypt(pass.value, pass.value);
+            return pass12.toString()
+        }
+        // assign the events
+        submit.addEventListener('click', RegisterUser);
+
+
+    //       // Referensi
+    //       const nim2 = document.getElementById('NIMInp');
+    //       const pass = document.getElementById('passInp');
+    //       const submit = document.getElementById('sub_btn');
+
+    //       // Authentication proses
+    //       function AuthenticateUser(){
+    //       const dbref = ref(db);
+
+    //       get(child(dbref, "UserMahasiswa/" + nim2.value)).then((snapshot)=>{
+    //       if(snapshot.exists()){
+    //         let dbpass = decPass (snapshot.val().password);
+    //         let dbnim = snapshot.val().nim;
+    //         let dbnama = snapshot.val().nama;
+
+    //         if(((dbpass == pass.value))){
+    //           // login(snapshot.val())
+    //           sessionStorage.setItem('nim', dbnim);
+    //           sessionStorage.setItem('nama', dbnama);
+    //           if(((dbpass == pass.value) && (dbnim == nisn2.value))){
+    //             window.location = "home.html"; 
+    //           }
+    //           // alert("berhasil login");
+    //         }else{
+    //           swal ( "NIM atau Password Kamu Salah" ,  "Mohon Cek Kembali Lagi" ,  "error" )
+    //         }
+    //     }else{
+    //       swal ( "Akun Belum Terdaftar","",  "error" )
+    //     }
+    //   });
+    // }
+
+    // // Encription password
+    // function decPass(dbpass){
+    // var pass12 = CryptoJS.AES.decrypt(dbpass, pass.value);
+    // return pass12.toString(CryptoJS.enc.Utf8);
+    // }
+
+    // Login
+    const nim2 = document.getElementById('nim_signin2');
+    const pass2 = document.getElementById('psw_signin2');
+    const submitt = document.getElementById('signin-button');
+
+      function AuthenticateUser(){
+      const dbref = ref(db);
+
+      get(child(dbref, "UserMahasiswa/" + nim2.value)).then((snapshot)=>{
+        if(snapshot.exists()){
+            let dbpass = decPass (snapshot.val().password);
+            let dbnim = snapshot.val().nim;
+            let dbnama = snapshot.val().nama;
+            let dbkelas = snapshot.val().kelas;
+            // let dbkelas = snapshot.val().kelas;
+
+            console.log(dbpass + dbnama + dbnim + " masuk")
+            if(((dbpass == pass2.value))){
+              // login(snapshot.val())
+              localStorage.setItem('nim2', dbnim);
+              localStorage.setItem('nama2', dbnama);
+              localStorage.setItem('kelas2', dbkelas);
+
+              if(((dbpass == pass2.value) && (dbnim == nim2.value))){
+                
+                window.location = "/page/home.html"; 
+                // console.log("hallo")
+              }
+              // alert("berhasil login");
+            }else{
+              swal ( "NIM atau Password Kamu Salah" ,  "Mohon Cek Kembali Lagi" ,  "error" )
+            }
+        }else{
+          swal ( "Akun Belum Terdaftar","",  "error" )
+        }
+      });
+    }
+
+    // Encription password
+    function decPass(dbpass){
+      var pass123 = CryptoJS.AES.decrypt(dbpass, pass2.value);
+      return pass123.toString(CryptoJS.enc.Utf8);
+    }
+
+    submitt.addEventListener('click', AuthenticateUser);
+    </script>
+
+</body>
+
+</html>

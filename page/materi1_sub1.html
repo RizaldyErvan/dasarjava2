@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="stylemateri.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+     <!-- Unicons CSS -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+     <!-- Highlightjs -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+     <!-- Font Editor -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+      <!-- SweetAlert -->
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <!-- Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
+
+   <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+
+   </head>
+<body>
+  <div class="sidebar open">
+    <div class="logo-details">
+      <img src="/assets/img/JavaTiKom.png" width="50" height="50"/>
+
+      <span class="logo_name">Javatikom</span>
+    </div>
+    <hr>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="/page/home.html">
+            <i class='bx bxs-home'></i>
+            <span class="link_name">Home</span>
+          </a>
+        </div>
+
+        <div class="iocn-link aktif">
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Materi 1</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu menuAktif">
+          <li><a class="link_name" href="#">Materi 1</a></li>
+          <li><a href="/page/materi1_sub1.html" class="aktif2">Pengertian Java</a></li>
+          <li><a href="/page/materi1_sub2.html">Sintaks Java</a></li>
+          <li><a href="/page/materi1_sub3.html">Output Java</a></li>
+          <li><a href="/page/petunjukkuis_materi1.html">Kuis</a></li>
+        </ul>
+      </li> 
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Materi 2</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri2"></i>
+            <!-- <span class="link_name">Materi 2 <i class='bx bxs-chevron-down arrow' ></i></span> -->
+            
+            <!-- id="subsatu" -->
+          
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 2</a></li>
+          <li><a href="/page/materi2_sub1.html">Pengertian Variabel</a></li>
+          <li><a href="/page/materi2_sub2.html">Variabel Cetak</a></li>
+          <li><a href="/page/materi2_sub3.html">Deklarasi Banyak Variabel</a></li>
+          <li><a href="/page/materi2_sub4.html">Variabel Identifier</a></li>
+          <li><a href="/page/materi2_sub5.html">Variabel Konstanta</a></li>
+          <li><a href="/page/petunjukkuis_materi2.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 3</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri3" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 3</a></li>
+          <li><a href="/page/materi3_sub1.html">Pengertian Tipe Data Java</a></li>
+          <li><a href="/page/materi3_sub2.html">Jenis-Jenis Tipe Data</a></li>
+          <li><a href="/page/materi3_sub3.html">Tipe Integer</a></li>
+          <li><a href="/page/materi3_sub4.html">Floating-point</a></li>
+          <li><a href="/page/materi3_sub5.html">Tipe Boolean</a></li>
+          <li><a href="/page/materi3_sub6.html">Tipe Character</a></li>
+          <li><a href="/page/materi3_sub7.html">Tipe String</a></li>
+          <li><a href="/page/materi3_sub8.html">Tipe Array</a></li>
+          <li><a href="/page/petunjukkuis_materi3.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 4</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri4" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 4</a></li>
+          <li><a href="/page/materi4_sub1.html">Pengertian Operator</a></li>
+          <li><a href="/page/materi4_sub2.html">Jenis-Jenis Operator</a></li>
+          <li><a href="/page/materi4_sub3.html">Aritmatika</a></li>
+          <li><a href="/page/materi4_sub4.html">Increment dan Decrement</a></li>
+          <li><a href="/page/materi4_sub5.html">Perbandingan Relasionak</a></li>
+          <li><a href="/page/materi4_sub6.html">Logika / Boolean</a></li>
+          <li><a href="/page/materi4_sub7.html">Assignment</a></li>
+          <li><a href="/page/petunjukkuis_materi4.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 5</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri5" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 5</a></li>
+          <li><a href="/page/materi5_sub1.html">Perintah IF</a></li>
+          <li><a href="/page/materi5_sub2.html">Perintah Switch</a></li>
+          <li><a href="/page/materi5_sub3.html">Perintah For</a></li>
+          <li><a href="/page/materi5_sub4.html">Perintah While</a></li>
+          <li><a href="/page/materi5_sub5.html">Perintah Do While</a></li>
+          <li><a href="/page/materi5_sub6.html">Perintah Break</a></li>
+          <li><a href="/page/materi5_sub7.html">Perintah Continue</a></li>
+          <li><a href="/page/petunjukkuis_materi5.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 6</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri6" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 6</a></li>
+          <li><a href="/page/materi6_sub1.html">Pengertian Methods</a></li>
+          <li><a href="/page/materi6_sub2.html">Parameter dan Argumen <br>Method</a></li>
+          <li><a href="/page/materi6_sub3.html">Perintah Return <br>Bahasa Java</a></li>
+          <li><a href="/page/materi6_sub4.html">Variabel Scope</a></li>
+          <li><a href="/page/petunjukkuis_materi6.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="/page/petunjuk_evaluasi.html">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+        </div>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name" id="nama_mahasiswa"></div>
+        <div class="job" id="nim_mahasiswa"></div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+
+  <section class="home-section">
+    
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text">Dasar-Dasar Pemrograman Java</span>
+      <a href="/page/home.html">
+        <i class='bx bx-home-smile'></i>
+      </a>
+    </div>
+
+    <div class="konten">
+      <div class="materi">
+
+        <div class="tab-content card p-3">
+          <h1>Pengenalan Bahasa Pemrograman Java</h1>
+          <hr>
+          <div class="accordion mb-2" id="accordionTujpem">
+            <div class="card">
+              <div class="card-header" id="headingTujpem">
+                <h5 class="mb-0">
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#tujpem" aria-expanded="true" aria-controls="tujpem">
+                    <strong> Tujuan Pembelajaran </strong>
+                  </button>
+                </h5>
+              </div>
+              <div class="card-body" id="cardtujpem">
+                <ul>
+                  <li>Mahasiswa mampu menerangkan pengertian Java dengan baik</li>
+                    <li>Mahasiswa menerangkan sintaks Java dengan baik</li>
+                    <li>Mahasiswa mampu mengeksekusi program Java dengan baik</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <hr> -->
+          <!-- <p>Bacalah <b style="color: #9B2915;">definisi</b> di bawah ini!</p> -->
+          <!-- <h5><b>A. Definisi Java</b></h5> -->
+          <!-- <hr> -->
+          <div class="card my-2 shadow">
+              <div class="card-body" style="background-color: #fffbdb">
+                <!-- poin 1 -->
+                <div id="satu">
+                  <!-- <p class="text-left"><b>Pengertian Bahasa Pemrograman Java</b></p> -->
+                  <h5><b>A. Pengertian Java</b></h5>
+                  <p style="text-indent: 45px; text-align: justify;">Java merupakan bahasa pemrograman umum <i>(general-purpose)</i> yang konkuren (menjalankan banyak hal secara bersamaan), berbasis <i>class</i>, berorientasi object dan dirancang secara khusus agar tidak bergantung pada sistem. Logo Java sendiri bisa dilihat pada gambar 1.</p>
+                  <center>
+                    <img src="/assets/img/logojava1.png" alt="Logo Java">
+                    <br>
+                    <br>
+                    <p><i>Gambar 1. Logo Java</i></p>
+                  </center><br>
+                  <p class="text-center" style="background-color: #fffbdb;">
+                  <p style="text-align: justify;">Dari pengertian di atas kita bisa melihat fitur-fitur terpenting dalam bahasa Java:</p>
+                  <ul>
+                    <li><i><b>General-purpose computer-programming language</b></i></li>
+                    <p style="text-align: justify;">Java dirancang sebagai bahasa pemrograman umum yang bisa dipakai untuk membuat berbagai aplikasi, mulai untuk aplikasi desktop, websitei, aplikasi mobile, hingga embedded device seperti microporcessor atau perangkat pintar.</p>
+                    <li><i><b>Concurrent</b></i></li>
+                    <p style="text-align: justify;">Dalam teori komputasi, <i>concurrent programming</i> adalah fitur di sebuah bahasa pemrograman yang bisa menjalankan banyak hal dalam satu waktu. Lawan dari kata <i>concurrent</i> adalah <i>sequiential programming</i>, di mana alur pemrograman diproses secara berurutan dari awal hingga akhir. Secara umum, <i>concurrent</i> programming akan meningkatkan performa dari aplikasi yang dibuat.</p>
+                    <li><i><b>Class-based, object-oriented</b></i></li>
+                    <p style="text-align: justify;">Mungkin ini adalah fitur paling terkenal di bahasa Java, yakni pemrograman berbasis object. Berbeda dengan kebanyakan bahasa pemrograman yang mendukung pemrograman prosedural dan object sekaligus (seperti C++, PHP, atau Python), bahasa Java hanya menyediakan konsep object saja.
+                    Fitur pemrograman object ini memang akan memudahkan dalam pebuatan aplikasi yang kompleks, namun disisi lain juga membuat bahasa Java relatif lebih susah dipelajari terutama bagi pemula.</p>
+                    <li><i><b>Designed to have as few implementation dependencies as possible</b></i></li>
+                    <p style="text-align: justify;">Bahasa Java memiliki moto <i>“Write once, run anywhere”</i>, yang menekankan bahwa satu kode program Java yang kita tulis, bisa langsung berjalan dibanyak perangkat dan berbagai sistem informasi, tanpa perlu di compile ulang.</p>
+                  </ul>
+
+
+        <!-- <div class="alert alert-light text-center" role="alert">
+          Materi 1 - Definisi Bahasa Pemrograman Java
+        </div> -->
+        
+          
+          
+          <!-- <div class="row justify-content-center">
+                <div class="col-md-10 col-sm-12 col align-self-center"> -->
+                  <!-- <div class="row g-0 justify-content-center">
+                    <div class="col-md-6 ps-5"> -->
+                      <!-- <div class="card course-scroll shadow"> -->
+                        
+                                
+                                  <!-- akhir poin 1 -->
+
+                                 
+                                  
+                                  
+                                  <!-- akhir poin 3 -->
+
+                                  <!-- poin 4
+                                  <div id="empat">
+                                    <p class="text-align: left;"><b>Operasi I/O Pemrograman Java</b></p>
+                                    <li><i><b>System.out.println()</b></i></li>
+                                    <p style="text-align: justify;">Perintah System.out.println() merupakan perintah untuk menampilkan output kedua yang paling umum digunakan. Perintah System.out.println() dapat menampilkan output dengan ditambah baris baru. Perintah System.out.println() digunakan dengan cara seperti pada kode berikut.</p>
+                                    <strong>Cobalah contoh di bawah ini menggunakan <i>compiler</i></strong>
+                                    <div class="card w-90 bg-light">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Main.java</h5>
+                                        <div class="card-body fs-5">
+                                          <pre>
+                                            <code class="language-java">
+class Main {
+  public static void main(String args[]){
+
+    System.out.println("Semangat Belajar Java");
+    System.out.println("di Javatikom");
+  }
+}
+                                            </code>
+                                          </pre>
+                                          <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1-3" aria-controls="offcanvasRight1-3">Coba Sendiri Kode</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight1-3" aria-labelledby="offcanvasRightLabel">
+                                      <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100"></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                      </div>
+                                      <div class="offcanvas-body h-100">
+                                        <pre>
+                                          <code class="language-java pe-none">
+  class Main {
+    public static void main(String args[]){
+
+      System.out.println("Semangat Belajar Java");
+      System.out.println("di Javatikom");
+    }
+  }
+                                          </code>
+                                        </pre>
+                                        <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                      </div>
+                                    </div>
+                                    <li><i><b>System.out.format()</b></i></li>
+                                    <p style="text-align: justify;">System.out.format() adalah sebuah metode dalam bahasa pemrograman Java yang digunakan untuk menampilkan output yang diformat ke konsol atau output standar. Metode ini mirip dengan metode printf() yang digunakan dalam bahasa pemrograman C. Format output ditentukan oleh string format, yang memungkinkan kita untuk memformat tampilan output seperti menambahkan angka desimal, mengatur panjang string, menambahkan spasi, dan lain sebagainya. Metode ini juga memungkinkan kita untuk memformat dan menampilkan data dengan bahasa dan budaya yang berbeda menggunakan Locale. Perintah System.out.format() digunakan dengan cara seperti kode berikut.</p>
+                                    <strong>Cobalah contoh di bawah ini menggunakan <i>compiler</i></strong>
+                                    <div class="card w-90 bg-light">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Main.java</h5>
+                                        <div class="card-body fs-5">
+                                          <pre>
+                                            <code class="language-java">
+class Main {
+  public static void main(String args[]){
+
+    String namaDepan = "Rizaldy";
+    String namaBelakang = "Ervan";
+
+    System.out.format("Nama saya %s %s %n", namaDepan, namaBelakang);
+  }
+}
+                                            </code>
+                                          </pre>
+                                          <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1-4" aria-controls="offcanvasRight1-4">Coba Sendiri Kode</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight1-4" aria-labelledby="offcanvasRightLabel">
+                                      <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100"></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                      </div>
+                                      <div class="offcanvas-body h-100">
+                                        <pre>
+                                          <code class="language-java pe-none">
+class Main {
+  public static void main(String args[]){
+
+    String namaDepan = "Rizaldy";
+    String namaBelakang = "Ervan";
+
+    System.out.format("Nama saya %s %s %n", namaDepan, namaBelakang);
+  }
+}
+                                          </code>
+                                        </pre>
+                                        <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                      </div>
+                                    </div>
+                                    <p style="text-align: justify;">
+                                    <strong>Perhatikan</strong>
+                                  : di sana kita menggunakan simbol 
+                                <code>%s</code>
+                                 untuk mengambil nilai dari variabel di sampingnya. 
+                                <code>%s</code>
+                                 artinya string.
+                                 <br><br>
+                                 Selain <code>%s</code>, ada juga simbol lain: 
+                                 <ul>
+                                  <li><code>%d</code> untuk desimal atau angka;</li>
+                                  <li><code>%f</code> untuk bilangan pecahan;</li>
+                                  <li><code>%n</code> untuk baris baru, bisa juga pakai <code>\n</code>;</li>
+                                 </ul>
+                              </p>
+                                  </ul>
+                                  </p>
+                                  <hr>
+
+                                  <div class="card latihan mt-2">
+                                    <h5 class="card-header">Latihan <a class="btn btn-secondary ms-2" data-bs-toggle="collapse" href="#collapsePetunjuk" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                      <i class="fa-solid fa-circle-info"></i> Petunjuk Pengerjaan
+                                    </a></h5>
+                                    <div class="card-body">                    
+                                      <div class="collapse show" id="collapsePetunjuk">
+                                        <div class="card">
+                                        <h5 class="card-header">Petunjuk Mengerjakan Latihan</h5>
+                                        <div class="card-body">
+                                          <ol>
+                                            <li>Jawablah soal-soal dibawah ini dengan mengisikannya pada inputan yang tersedia.</li>
+                                            <li>Tekan tombol cek jawaban untuk mencek jawaban.</li>
+                                            <li>Apabila inputan berwana <b class="text-danger">Merah</b> jawaban salah, dan apabila berwana <b class="text-success">Hijau</b> jawaban benar.</li>
+                                          </ol>
+                                        </div>
+                                      </div>
+                                    </div>
+                                      <ol>
+                                        <li>Lengkapilah bagian yang kosong pada kode program berikut ini untuk menampilkan output “Mari Belajar Java Online”.</li>
+                                        <div class="card latihan p-3">
+                                          <code class="text-dark lh-lg">
+                                          class Main {<br>
+                                            &emsp;&emsp;public static void main(String args[]) {<br>
+                                          &emsp;<br>
+                                          &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer1" maxlength="20" size="20" placeholder="..." />("Mari Belajar Java Online");<br>
+                                          &emsp;}<br>
+                                            }
+                                          </code>
+                                        </div>
+                                        <li>Lengkapilah program Java berikut untuk mencetak angka 17 ke layar:</li>
+                                        <div class="card latihan p-3">
+                                          <code class="text-dark lh-lg">
+                                            class Main {<br>
+                                              &emsp;&emsp;public static void main(String args[]) {<br>
+                                            &emsp;<br>
+                                            &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer2" maxlength="30" size="30" placeholder="..." />;<br>
+                                              &emsp;}<br>
+                                            }
+                                          </code>
+                                        </div>
+                                        <li class="mt-4">Lengkapilah program Java berikut untuk membuat komentar:</li>
+                                        <div class="card latihan p-3">
+                                          <code class="text-dark lh-lg">
+                                                class Main {<br>
+                                                  &emsp;&emsp;public static void main(String args[]) {<br>
+                                                &emsp;<br>
+                                                &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer3" maxlength="5" size="5" placeholder="..." /><br>
+                                                &emsp;&emsp;&emsp; Ini adalah komentar<br>
+                                                &emsp;&emsp;&emsp; Ditulis dengan<br>
+                                                &emsp;&emsp;&emsp; Lebih dari satu baris<br>
+                                                &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer4" maxlength="5" size="5" placeholder="..." /><br>
+                                                &emsp;}<br>
+                                                }
+                                              </code>
+                                        </div>
+                                        <li class="mt-4"> Lengkapilah program Java berikut untuk membuat mencetak kalimat satu baris saja:</li>
+                                        <div class="card latihan p-3">
+                                          <code class="text-dark lh-lg">
+                                              class Main {<br>
+                                                &emsp;&emsp;public static void main(String args[]) {<br>
+                                              &emsp;<br>
+                                              &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer5" maxlength="30" size="30" placeholder="..." />Ayo Belajar;<br>
+                                              &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer6" maxlength="30" size="30" placeholder="..." />Java Online;<br>
+                                                &emsp;}<br>
+                                              }
+                                            </code>
+                                        </div>
+                                        <li class="mt-4">Tambahkan baris baru setelah kalimat "Ayo Belajar" dan kalimat "Java Online". Lengkapilah bagian yang kosong pada kode program berikut:</li>
+                                        <div class="card latihan p-3">
+                                          <code class="text-dark lh-lg">
+                                            class Main {<br>
+                                              &emsp;&emsp;public static void main(String args[]) {<br>
+                                            &emsp;<br>
+                                            &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer7" maxlength="30" size="30" placeholder="..." />Ayo Belajar;<br>
+                                            &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer8" maxlength="30" size="30" placeholder="..." />Java Online;<br>
+                                            &emsp;&emsp;&emsp; <input type="text" class="m-1 jawab" id="answer9" maxlength="30" size="30" placeholder="..." />di website ini;<br>
+                                              &emsp;}<br>
+                                            }
+                                          </code>
+                                        </div>
+                                      </ol>
+                                      <button type="button" onclick="cekJawaban()" class="btn btn-sm btn-outline-primary">Cek Jawaban</button>
+                                    </div>
+                                  </div>
+                                  </div> -->
+                                 
+                                  <!-- <div id="pemahaman" class="pemahaman" style="display: block">
+                                    <blockquote class="blockquote">
+                                      <p>Untuk menguji pemahaman materi di atas, silahkan kerjakan soal dibawah ini!</p>
+                                    </blockquote>
+                                    <h5 id="judulSoal">Pertanyaan 1 dari 5</h5>
+                                    <p id="soal" class="fs-5" ></p>
+                                    <div class="pilihan">
+                                    </div>
+                                    <div class="evaluasi"></div>
+                                    <div class="mt-2">
+                                      <button id="soalNext" class="btn btn-sm btn-info">Selanjutnya</button>
+                                    </div>
+                                  </div>
+                                  <div id="pemahaman2" class="pemahaman" style="display: none">
+                                    <blockquote>
+                                      Untuk menguji pemahaman materi di atas, silahkan kerjakan soal dibawah ini!
+                                    </blockquote>
+                                    <h5 id="judulSoal2">Pertanyaan 2 dari 5</h5>
+                                    <p id="soal2">Bahasa Java disebut juga dengan bahasa...</p>
+                                    <div class="pilihan2">
+                                    </div>
+                                    <div class="evaluasi2"></div>
+                                    <div class="mt-2">
+                                      <button type="button" class="btn btn-sm btn-info">Sebelumnya</button>
+                                      <button id="soalNext2" class="btn btn-sm btn-info">Selanjutnya</button>
+                                    </div>
+                                  </div>
+                    
+                                  <div id="pemahaman3" class="pemahaman" style="display: none">
+                                    <blockquote>
+                                      Untuk menguji pemahaman materi di atas, silahkan kerjakan soal dibawah ini!
+                                    </blockquote>
+                                    <h5 id="judulSoal3">Pertanyaan 3 dari 5</h5>
+                                    <p id="soal3">Soal</p>
+                                    <div class="pilihan3"></div>
+                                    <div class="evaluasi3"></div>
+                                    <div class="mt-2">
+                                      <button id="soalPrev3" class="btn btn-sm btn-info">Sebelumnya</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+                                 
+                              <!-- <div class="prevNext my-2">
+                                <button id="next" class="btn btn-outline-info px-4 float-right">
+                                  NEXT
+                                  <span style="font-size: 1em">
+                                    <i class="fas fa-arrow-right"></i>
+                                  </span>
+                                </button>
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="prevNext d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                          <a href="/page/materi1_sub2.html">
+                          <button id="next" class="btn btn-primary px-4 float-right">
+                            NEXT
+                            <span style="font-size: 1em">
+                              <i class='bx bx-right-arrow-alt'></i>
+                            </span>
+                          </button>
+                        </a>
+                        </div>
+                         <!-- akhir poin 4 -->
+                    
+                                  
+
+                                  <!-- <p style="text-indent: 45px;">“Mother, what should I do? My cellphone is in trouble. Should I fix it? Or should I sell it? Do you have any suggestion?” Aluh asked her mother.</p>
+                                  <p style="text-indent: 45px;">“Honey, I think you should fix it if you still love and need it very much. Look, it’s quite pretty well. Just be patience. I suppose your brother can make it run well again,” her mother said.</p>
+                                  <p style="text-indent: 45px;">“That’s a good idea, Mom. So, where is he? Isn’t he going camping for some days?” She said with sad face.</p>
+                                  <p style="text-indent: 45px;">Her brother, Anang, was going to Bromo for a week, and it was the last day since he had gone.<br>
+                                  “Yes, My Dear. But this is the last day and I think he is on going home right now. Why don’t you call him? Here is my phone.”</p>
+                                  <p style="text-indent: 45px;">Then she called Anang to make sure that he was so. Anang said to her that he had arrived. What a surprise! She run to door and opened the door for him.</p>
+                                  <p style="text-indent: 45px;">“O My Dear. I’m so happy to see you again. You look so sad. You ought to be cheerful as usual,” said Anang.</p>
+                                  <p style="text-indent: 45px;">She told him what had happened. He said, “O I see. Don’t worry. I’ll handle it. Now, smile for me, My Dear.” Then, they smiled and laughed together.</p>
+                                  *cellphone (cellular phone) = handphone = mobile phone<br><br><br> -->
+                                  <!-- <i>(Source : Pemrograman Dasar 2 - Dasar-Dasar Pemrograman Java)</i> -->
+                              </div>
+                          </div><br>
+                          <!-- <div style="text-align: center;">
+                            <b>Apakah kamu sudah selesai membaca passage 1 di atas?</b>
+                            <b>Sekarang ayo klik tombol di bawah ini untuk membuka exercise 1.1!</b><br><br>
+                            <button class="btn btn-warning" id="show-exercise1">Go to Exercise</button>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+      
+                    <!-- <div class="col-md-6 pe-4 col-sm-12" >
+                      <div class="card course-scroll shadow">
+                        <div class="card-body">
+                            
+                          <h1>Trinket Compiler Online</h1>
+                          <hr>
+      
+                          <div class="card my-2 shadow" style="height: 300px;">
+                              <div class="card-body" style="background-color: #fffbdb">
+                                   <p class="text-center"><b>InterviewBit Compiler Online</b></p> -->
+                                  <!-- <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe> -->
+                                  <!-- <p style="text-indent: 45px;">Aluh had trouble with her cellphone*. The speaker didn’t run well. She had a plan to sell it, but she still loved it. She asked her mother.</p>
+                                  <p style="text-indent: 45px;">“Mother, what should I do? My cellphone is in trouble. Should I fix it? Or should I sell it? Do you have any suggestion?” Aluh asked her mother.</p>
+                                  <p style="text-indent: 45px;">“Honey, I think you should fix it if you still love and need it very much. Look, it’s quite pretty well. Just be patience. I suppose your brother can make it run well again,” her mother said.</p>
+                                  <p style="text-indent: 45px;">“That’s a good idea, Mom. So, where is he? Isn’t he going camping for some days?” She said with sad face.</p>
+                                  <p style="text-indent: 45px;">Her brother, Anang, was going to Bromo for a week, and it was the last day since he had gone.<br>
+                                  “Yes, My Dear. But this is the last day and I think he is on going home right now. Why don’t you call him? Here is my phone.”</p>
+                                  <p style="text-indent: 45px;">Then she called Anang to make sure that he was so. Anang said to her that he had arrived. What a surprise! She run to door and opened the door for him.</p>
+                                  <p style="text-indent: 45px;">“O My Dear. I’m so happy to see you again. You look so sad. You ought to be cheerful as usual,” said Anang.</p>
+                                  <p style="text-indent: 45px;">She told him what had happened. He said, “O I see. Don’t worry. I’ll handle it. Now, smile for me, My Dear.” Then, they smiled and laughed together.</p>
+                                  *cellphone (cellular phone) = handphone = mobile phone<br><br><br> -->
+                                  <!-- <i>(Source : Pemrograman Dasar 2 - Dasar-Dasar Pemrograman Java)</i> -->
+                              </div>
+                          </div><br>
+                          
+                          <!-- <style>
+                            .didrag, th, tr, td{
+                                border-style: double;
+                                border-radius: 5px;
+                                border-color: #235789;
+                                text-align: center;
+                            }
+                            tr{
+                              height: 40px;
+                            }
+                          </style> -->
+      
+                              
+                                  
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+      
+                  <!-- <div class="bawah">
+                    <nav aria-label="paginator">
+                      <ul class="pagination justify-content-center m-5">
+
+                        <li class="page-item" id="btnsebelum">
+                          <a class="page-link ml-1" id="mprev" href="/page/materisubbab1.html">Materi Sebelumnya</a>
+                        </li>
+
+                        <li class="page-item" id="btnsebelum">
+                          <a id="prev" class="page-link" onclick="" tabindex="-1" hidden style="cursor:pointer;">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+
+                      <li class="page-item"><a class="page-link pageAktif" id="btnsatu" onclick="satu();" style="cursor: pointer;">1</a></li>
+                      <li class="page-item" ><a class="page-link" id="btndua" onclick="dua();" style="cursor: pointer;">2</a></li>
+                      <li class="page-item" ><a class="page-link" id="btntiga" onclick="tiga();" style="cursor: pointer;">3</a></li>
+                      <li class="page-item" ><a class="page-link" id="btnempat" onclick="empat();" style="cursor: pointer;">4</a></li>
+                      
+                      <li class="page-item" id="btnselanjutnya" >
+                          <a id="next" class="page-link" onclick="dua();" style="cursor: pointer;" >
+                              <span aria-hidden="true">&raquo;</span>
+                          </a>
+                      </li>
+                     
+                      <li class="page-item" id="btnselanjutnya">
+                          <a class="page-link ml-1" id="mnext" href="/page/materisubbab2.html" hidden>Materi Selanjutnya</a>
+                      </li>
+                      </ul>
+                    </nav>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </section>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+
+  <!-- Ace Editor Java -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/ace.min.js" integrity="sha512-VDk4SZZXv8Karl+tl3RKw3grEZ0ofFrh7J5IKnVgP843O85vbeZv/npjEWtM9BhDuUHbtJc60ZpR4wjiYTfC7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/mode-java.min.js" integrity="sha512-dAGTKAA1p8e4hYvchE5NLx6G7uv3nwuRNHpazHyO0LzdqKqArrm16asxFILrjz6dy8BhDrlMNRFHTfqDVCW/sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/theme-monokai.min.js" integrity="sha512-8rSB/wU3KoN3rr1VHwPP4dfpbU063BvH6qzwt0oe9E2ThEchzd8MmJylVPxZ5kLvxsShgtWvc9AtIlS7rmPunA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- <script src="/page/paginator.js"></script>
+  <script src="/page/cek_pemahaman.js"></script> -->
+  <script src="/page/latihan_materi1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+</script>
+<!-- <script src="/page/editor.js"></script> -->
+<script src="/page/simpandata.js"></script>
+<script type="module" src="/page/lockData.js"></script>
+
+<script>
+  const db = getDatabase();
+
+onValue(ref(db, `Data-Siswa/${sessionStorage.getItem("NIS")}`), (snapshot) => {
+    const kunci = snapshot.val().kunci;
+    if(kunci == 0 ){
+        document.getElementById("sub1").style.display="none";
+        document.getElementById("sub2").style.display="none";
+        document.getElementById("sub3").style.display="none";
+        document.getElementById("sub4").style.display="none";
+        document.getElementById("subsatu").style.display="block";
+        document.getElementById("subdua").style.display="block";
+        document.getElementById("subtiga").style.display="block";
+        document.getElementById("subempat").style.display="block";
+        
+    } 
+    if(kunci == 1 ){
+        document.getElementById("sub1").style.display="block";
+        document.getElementById("sub2").style.display="none";
+        document.getElementById("sub3").style.display="none";
+        document.getElementById("sub4").style.display="none";
+        document.getElementById("subsatu").style.display="none";
+        document.getElementById("subdua").style.display="block";
+        document.getElementById("subtiga").style.display="block";
+        document.getElementById("subempat").style.display="block";
+     
+    }
+    if(kunci == 2 ){
+        document.getElementById("sub1").style.display="block";
+        document.getElementById("sub2").style.display="block";
+        document.getElementById("sub3").style.display="none";
+        document.getElementById("sub4").style.display="none";
+        document.getElementById("subsatu").style.display="none";
+        document.getElementById("subdua").style.display="none";
+        document.getElementById("subtiga").style.display="block";
+        document.getElementById("subempat").style.display="block";
+     
+    }
+
+    if(kunci == 3 ){
+        document.getElementById("sub1").style.display="block";
+        document.getElementById("sub2").style.display="block";
+        document.getElementById("sub3").style.display="block";
+        document.getElementById("sub4").style.display="none";
+        document.getElementById("subsatu").style.display="none";
+        document.getElementById("subdua").style.display="none";
+        document.getElementById("subtiga").style.display="none";
+        document.getElementById("subempat").style.display="block";
+     
+    }
+    if(kunci == 4 ){
+        document.getElementById("sub1").style.display="block";
+        document.getElementById("sub2").style.display="block";
+        document.getElementById("sub3").style.display="block";
+        document.getElementById("sub4").style.display="block";
+        document.getElementById("subsatu").style.display="none";
+        document.getElementById("subdua").style.display="none";
+        document.getElementById("subtiga").style.display="none";
+        document.getElementById("subempat").style.display="none";
+    }
+
+    const btnNext = document.getElementById('next');
+    btnNext.addEventListener('click', function() {
+        if (kunci == 0) {
+            update(ref(db, "UserMahasiswa/"+ localStorage.getItem("nim")),{
+                kunci: kunci+1,
+            })
+            .then(()=>{
+                // alert('hahahaha')
+                location.href = "besaran_gerak_melingkar.html";
+            })
+            .catch((error)=>{
+                alert("unsucsessful, error"+error);
+            });
+        } else {
+            location.href = "besaran_gerak_melingkar.html";
+        }
+    })
+      });
+
+</script>
+</body>
+</html>

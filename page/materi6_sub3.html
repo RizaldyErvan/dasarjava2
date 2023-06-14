@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="stylemateri.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+     <!-- Unicons CSS -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+     <!-- Highlightjs -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+     <!-- Font Editor -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+      <!-- Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
+
+   <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+
+
+   </head>
+<body>
+  <div class="sidebar open">
+    <div class="logo-details">
+      <img src="/assets/img/JavaTiKom.png" width="50" height="50"/>
+
+      <span class="logo_name">Javatikom</span>
+    </div>
+    <hr>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="/page/home.html">
+            <i class='bx bxs-home'></i>
+            <span class="link_name">Home</span>
+          </a>
+        </div>
+        
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Materi 1</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 1</a></li>
+          <li><a href="/page/materi1_sub1.html">Pengantar Java</a></li>
+          <li><a href="/page/materi1_sub2.html">Sintaks Java</a></li>
+          <li><a href="/page/materi1_sub3.html">Output Java</a></li>
+          <li><a href="/page/petunjukkuis_materi1.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Materi 2</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri2" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 2</a></li>
+          <li><a href="/page/materi2_sub1.html">Pengantar Variabel</a></li>
+          <li><a href="/page/materi2_sub2.html">Variabel Cetak</a></li>
+          <li><a href="/page/materi2_sub3.html">Deklarasi Banyak Variabel</a></li>
+          <li><a href="/page/materi2_sub4.html">Variabel Identifier</a></li>
+          <li><a href="/page/materi2_sub5.html">Variabel Konstanta</a></li>
+          <li><a href="/page/petunjukkuis_materi2.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 3</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri3" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 3</a></li>
+          <li><a href="/page/materi3_sub1.html">Pengantar Tipe Data</a></li>
+          <li><a href="/page/materi3_sub2.html">Jenis-Jenis Tipe Data</a></li>
+          <li><a href="/page/materi3_sub3.html">Tipe Data Integer</a></li>
+          <li><a href="/page/materi3_sub4.html">Floating-point</a></li>
+          <li><a href="/page/materi3_sub5.html">Tipe Data Boolean</a></li>
+          <li><a href="/page/materi3_sub6.html">Tipe Data Character</a></li>
+          <li><a href="/page/materi3_sub7.html">Tipe Data String</a></li>
+          <li><a href="/page/materi3_sub8.html">Tipe Data Array</a></li>
+          <li><a href="/page/petunjukkuis_materi3.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 4</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri4" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 4</a></li>
+          <li><a href="/page/materi4_sub1.html">Pengantar Operator</a></li>
+          <li><a href="/page/materi4_sub2.html">Jenis-Jenis Operator</a></li>
+          <li><a href="/page/materi4_sub3.html">Aritmatika</a></li>
+          <li><a href="/page/materi4_sub4.html">Increment dan Decrement</a></li>
+          <li><a href="/page/materi4_sub5.html">Perbandingan Relasionak</a></li>
+          <li><a href="/page/materi4_sub6.html">Logika / Boolean</a></li>
+          <li><a href="/page/materi4_sub7.html">Assignment</a></li>
+          <li><a href="/page/petunjukkuis_materi4.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 5</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri5" ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materi 5</a></li>
+          <li><a href="/page/materi5_sub1.html">Perintah IF</a></li>
+          <li><a href="/page/materi5_sub2.html">Perintah Switch</a></li>
+          <li><a href="/page/materi5_sub3.html">Perintah For</a></li>
+          <li><a href="/page/materi5_sub4.html">Perintah While</a></li>
+          <li><a href="/page/materi5_sub5.html">Perintah Do While</a></li>
+          <li><a href="/page/materi5_sub6.html">Perintah Break</a></li>
+          <li><a href="/page/materi5_sub7.html">Perintah Continue</a></li>
+          <li><a href="/page/petunjukkuis_materi5.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link aktif>
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Materi 6</span>
+          </a>
+          <i class='bx bxs-lock-alt' id="submateri6" ></i>
+        </div>
+        <ul class="sub-menu menuAktif">
+          <li><a class="link_name" href="#">Materi 6</a></li>
+          <li><a href="/page/materi6_sub1.html">Pengertian Methods</a></li>
+          <li><a href="/page/materi6_sub2.html">Parameter dan Argumen <br> Method</a></li>
+          <li><a href="/page/materi6_sub3.html" class="aktif2">Perintah Return <br>Bahasa Java</a></li>
+          <li><a href="/page/materi6_sub4.html">Variabel Scope</a></li>
+          <li><a href="/page/petunjukkuis_materi6.html">Kuis</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="/page/petunjuk_evaluasi.html">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Evaluasi</span>
+          </a>
+        </div>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name" id="nama_mahasiswa"></div>
+        <div class="job" id="nim_mahasiswa"></div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text">Dasar-Dasar Pemrograman Java</span>
+      <a href="/page/home.html">
+        <i class='bx bx-home-smile'></i>
+      </a>
+    </div>
+
+    <div class="konten">
+      <div class="materi">
+        <!-- <div class="alert alert-light text-center" role="alert">
+          Materi 1 - Definisi Bahasa Pemrograman Java
+        </div> -->
+        <div class="tab-content card p-3">
+            <h1>Pengenalan Method Pemrograman Java</h1>
+            <hr>
+        <div class="accordion mb-2" id="accordionTujpem">
+            <div class="card">
+              <div class="card-header" id="headingTujpem">
+                <h5 class="mb-0">
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#tujpem" aria-expanded="true" aria-controls="tujpem">
+                    <strong> Tujuan Pembelajaran </strong>
+                  </button>
+                </h5>
+              </div>
+              <div class="card-body" id="cardtujpem">
+                <ul>
+                  <li>Mahasiswa mampu menerangkan fungsi pada Java</li>
+                    <li>Mahasiswa mampu menerangkan penggunaan fungsi pada Java</li>
+                    <li>Mahasiswa mampu menerapkan fungsi pada program Java</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+            
+            <!-- <p>Bacalah <b style="color: #9B2915;">definisi</b> di bawah ini!</p> -->
+
+            <div class="card my-2 shadow">
+                <div class="card-body" style="background-color: #fffbdb">
+
+                     <!-- poin 3 -->
+                     <div id="tiga">
+                        <h5>C. Perintah Return Bahasa Java</h5>
+                        <!-- <p class="text-align: left;"><b>Operasi I/O Pemrograman Java</b></p> -->
+                        <p style="text-align: justify;">Sebelumnya kita sudah membuat beberapa function yang ketika di panggil akan langsung menampilkan teks yang berasal dari perintah <b>System.out.println()</b>. Berikut salah satu contoh yang dimaksud:</p>
+                        <div class="card w-90 bg-light">
+                            <div class="card-body">
+                              <h5 class="card-title">Main.java</h5>
+                              <div class="card-body fs-5">
+                                <pre>
+                                  <code class="language-java">
+class Main  {
+
+    static void hitungLuasSegitiga(int alas, int tinggi) {
+        double luas = (alas * tinggi) / 2;
+        System.out.println("Luas segitiga adalah: "+luas);
+    }
+        
+    public static void main(String args[]){
+        hitungLuasSegitiga(5, 7);
+    }
+        
+}
+                                  </code>
+                                </pre>
+                                <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6-9" aria-controls="offcanvasRight6-9">Coba Sendiri</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight6-9" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body h-100">
+                                <pre>
+                                  <code class="language-java pe-none">
+class Main {
+
+    static void hitungLuasSegitiga(int alas, int tinggi) {
+        double luas = (alas * tinggi) / 2;
+        System.out.println("Luas segitiga adalah: "+luas);
+    }
+        
+    public static void main(String args[]){
+        hitungLuasSegitiga(5, 7);
+    }
+        
+}
+                                      
+                                    
+                                  </code>
+                                </pre>
+                                <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                              </div>
+                            </div>
+
+
+                        <p style="text-align: justify;" class="mt-3">Di baris 9, begitu function <b>hitungLuasSegitiga(5, 7)</b> di panggil, akan tampil teks <b>Luas segitiga adalah: 17.0</b>.</p>
+
+                        <p style="text-align: justify;">Tidak ada yang salah dari penulisan fungsi ini, hanya saja terasa kurang fleksibel. Tidak selamanya kita ingin menampilkan teks secara langsung.</p>
+
+                        <p style="text-align: justify;">Dalam banyak situasi, hasil fungsi akan disimpan ke dalam variabel terlebih dahulu untuk kemudian baru di oleh lebih lanjut, misalnya ditambah ke operasi lain, di input sebagai argumen ke dalam function lain, dst. Tugas menampilkan teks seharusnya di lakukan dari kode program utama, bukan langsung dari dalam fungsi.</p>
+
+                        <p style="text-align: justify;">Untuk keperluan inilah kita perlu menambah perintah <b>return</b> ke dalam function. Tujuannya, <b>agar sebuah function bisa mengembalikan nilai</b>.</p>
+
+                        <p style="text-align: justify;">Langsung saja kita lihat modifikasi dari fungsi <b>hitungLuasSegitiga()</b> yang sekarang menjalankan perintah <b>return</b>:</p>
+                          <div class="card w-90 bg-light">
+                            <div class="card-body">
+                              <h5 class="card-title">Main.java</h5>
+                              <div class="card-body fs-5">
+                                <pre>
+                                  <code class="language-java">
+class Main {
+
+    static double hitungLuasSegitiga(double alas, double tinggi) {
+        double luas = (alas * tinggi) / 2;
+        return luas;
+    }
+        
+    public static void main(String args[]){
+        double foo = hitungLuasSegitiga(2, 3);
+        System.out.println(foo);
+    }
+        
+}
+                                  </code>
+                                </pre>
+                                <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6-10" aria-controls="offcanvasRight6-10">Coba Sendiri</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight6-10" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body h-100">
+                                <pre>
+                                  <code class="language-java pe-none">
+class Main {
+
+    static double hitungLuasSegitiga(double alas, double tinggi) {
+        double luas = (alas * tinggi) / 2;
+        return luas;
+    }
+        
+    public static void main(String args[]){
+        double foo = hitungLuasSegitiga(2, 3);
+        System.out.println(foo);
+    }
+        
+}
+                                    
+                                  </code>
+                                </pre>
+                                <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                              </div>
+                            </div>
+
+                          <p style="text-align: justify;" class="mt-3">Dalam bahasa Java, tipe data dari nilai yang dikembalikan fungsi harus di tulis di awal. Pada contoh di atas, tipe data yang dikembalikan oleh fungsi <b>hitungLuasSegitiga()</b> ini adalah <b>double</b>, yang kita tulis di baris 3 setelah <i>keyword</i> <b>static</b>. Sebelumnya di bagian ini terdapat <i>keyword</i> <b>void</b></p>
+
+                          <p style="text-align: justify;">Selanjutnya di baris 4 perhitungan mencari luas segitiga dilakukan oleh perintah <b>double luas = (alas * tinggi) / 2</b>. Tidak ada yang baru di baris ini.</p>
+
+                          <p style="text-align: justify;">Perintah <b>return</b> sendiri ada di baris 5, yakni berupa <b>return luas</b>. Artinya, kembalikan nilai yang tersimpan di dalam variabel <b>luas</b>. Kemana nilai ini di kembalikan? yakni kepada kode yang akan memanggil fungsi tersebut.</p>
+
+                          <p style="text-align: justify;">Di baris 8, kita membuat sebuah variabel <b>foo</b> bertipe <i>double</i>. Kemudian mengisinya dengan memanggil function <b>hitungLuasSegitiga(2, 3)</b>. Hasilnya, variabel <b>foo</b> akan berisi angka 3.0.</p>
+
+                          <p style="text-align: justify;">Seperti inilah cara penggunaan perintah <b>return</b> dalam mengembalikan nilai function.</p>
+                          <hr>
+
+                          <h5>Mengembalikan Langsung Hasil Operasi</h5>
+                          <p style="text-align: justify;">Dalam contoh di atas kita mengembalikan nilai dari variabel. Namun juga bisa langsung mengembalikan hasil sebuah operasi. Perhatikan kode program berikut ini:</p>
+                          <div class="card w-90 bg-light">
+                            <div class="card-body">
+                              <h5 class="card-title">Main.java</h5>
+                              <div class="card-body fs-5">
+                                <pre>
+                                  <code class="language-java">
+class Main {
+
+    static double hitungLuasSegitiga(double alas, double tinggi) {
+        return (alas * tinggi) / 2;
+    }
+        
+    public static void main(String args[]){
+        System.out.println("Luas segitiga adalah: "+hitungLuasSegitiga(5, 7));
+    }
+        
+}
+                                  </code>
+                                </pre>
+                                <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6-11" aria-controls="offcanvasRight6-11">Coba Sendiri</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight6-11" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body h-100">
+                                <pre>
+                                  <code class="language-java pe-none">
+class Main {
+
+    static double hitungLuasSegitiga(double alas, double tinggi) {
+        return (alas * tinggi) / 2;
+    }
+        
+    public static void main(String args[]){
+        System.out.println("Luas segitiga adalah: "+hitungLuasSegitiga(5, 7));
+    }
+        
+}
+                                    
+                                  </code>
+                                </pre>
+                                <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                              </div>
+                            </div>
+
+                          <p style="text-align: justify;" class="mt-3">Sekarang di baris 4 kita langsung mengembalikan <b>nilai (alas * tinggi) / 2</b>, tidak perlu lagi menyimpannya ke dalam variabel <b>luas</b> terlebih dahulu.</p>
+
+                          <p style="text-align: justify;">Kemudian di baris 8 pemanggilan fungsi <b>hitungLuasSegitiga()</b> dilakukan langsung dari dalam perintah <b>System.out.println()</b>, juga tidak perlu disimpan ke dalam sebuah variabel.</p>
+                          <hr>
+
+                          <h5>Hal-hal yang Harus Diperhatikan Untuk Perintah Return</h5>
+                          <p style="text-align: justify;">Terdapat beberapa hal yang harus diperhatikan ketika membuat function dengan perintah <b>return</b>.</p>
+
+                          <p style="text-align: justify;">Pertama, tipe data yang dikembalikan <b>harus sesuai</b> dengan yang ditulis ketika pendefinisian function. Berikut contoh kasusnya:</p>
+
+                          <div class="card w-90 bg-light">
+                            <div class="card-body">
+                              <h5 class="card-title">Main.java</h5>
+                              <div class="card-body fs-5">
+                                <pre>
+                                  <code class="language-java">
+class Main {
+
+    static int hitungLuasSegitiga(double alas, double tinggi) {
+        return (alas * tinggi) / 2;
+    }
+        
+    public static void main(String args[]){
+        System.out.println("Luas segitiga adalah: "+hitungLuasSegitiga(5, 7));
+    }
+        
+}
+                                  </code>
+                                </pre>
+                                <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6-12" aria-controls="offcanvasRight6-12">Coba Sendiri</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight6-12" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body h-100">
+                                <pre>
+                                  <code class="language-java pe-none">
+class Main {
+
+    static int hitungLuasSegitiga(double alas, double tinggi) {
+        return (alas * tinggi) / 2;
+    }
+        
+    public static void main(String args[]){
+        System.out.println("Luas segitiga adalah: "+hitungLuasSegitiga(5, 7));
+    }
+        
+}
+                                    
+                                  </code>
+                                </pre>
+                                <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                              </div>
+                            </div>
+
+                          <p style="text-align: justify;" class="mt-3">Error terjadi karena di baris 3 kita menulis tipe data kembalian sebagai <b>int</b>, padahal hasil dari perintah <b>return (alas * tinggi) / 2</b> di baris 4 akan mengembalikan nilai <b>double</b>. Di bahasa Java kode seperti ini menjadi error, sedikit berbeda dengan bahasa C++ yang akan langsung mengkonversi nilai tersebut.</p>
+
+                          <p style="text-align: justify;">Hal kedua yang harus diperhatikan adalah, perintah <b>return</b> berfungsi mirip seperti <b>break</b> dalam perulangan. Jika ditemukan perintah <b>return</b>, pemrosesan function akan berhenti dan tidak akan mengeksekusi kode dibawahnya:</p>
+
+                          <div class="card w-90 bg-light">
+                            <div class="card-body">
+                              <h5 class="card-title">Main.java</h5>
+                              <div class="card-body fs-5">
+                                <pre>
+                                  <code class="language-java">
+class Main {
+
+    static double hitungLuasSegitiga(double alas, double tinggi) {
+        return (alas * tinggi) / 2;
+        System.out.println("Hello Pilkomer");
+    }
+        
+    public static void main(String args[]){
+        System.out.println("Luas segitiga adalah: "+hitungLuasSegitiga(5, 7));
+    }
+        
+}
+                                  </code>
+                                </pre>
+                                <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6-13" aria-controls="offcanvasRight6-13">Coba Sendiri</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight6-13" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body h-100">
+                                <pre>
+                                  <code class="language-java pe-none">
+class Main {
+
+    static double hitungLuasSegitiga(double alas, double tinggi) {
+        return (alas * tinggi) / 2;
+        System.out.println("Hello Pilkomer");
+    }
+        
+    public static void main(String args[]){
+        System.out.println("Luas segitiga adalah: "+hitungLuasSegitiga(5, 7));
+    }
+        
+}
+                                    
+                                  </code>
+                                </pre>
+                                <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                              </div>
+                            </div>
+
+                            <p style="text-align: justify;" class="mt-3">Error diatas terjadi karena di baris 5 kita menulis perintah tambahan <b>System.out.println(“Hello Pilkomer”)</b>, padahal di atasnya sudah ada perintah <b>return</b>.</p>
+
+                            <p style="text-align: justify;">Dalam bahasa pemrograman lain seperti PHP atau JavaScript, perintah tambahan setelah <b>return</b> tidak akan menjadi error, hanya saja tidak akan pernah dijalankan. Sedangkan dalam bahasa Java akan tampil error. Pesan error ini sebenarnya sebuah keuntungan, karena compiler bahasa Java sudah mengingatkan ada sesuatu yang salah.</p>
+                            <hr>
+
+                            <strong>Contoh Lain Perintah Return Java</strong>
+                            <p style="text-align: justify;">Sebagai contoh terakhir, tanpa menjalankan kode program bisakah anda menebak hasil dari kode berikut ini?</p>
+                            <div class="card w-90 bg-light">
+                                <div class="card-body">
+                                  <h5 class="card-title">Main.java</h5>
+                                  <div class="card-body fs-5">
+                                    <pre>
+                                      <code class="language-java">
+class Main {
+
+    static int hargaSetelahPajak(int hargaDasar) {
+        return hargaDasar + (hargaDasar * 10/100);
+    }
+        
+    public static void main(String args[]){
+        int hargaCilok = 5000;
+        int hargaFinalCilok =  hargaSetelahPajak(hargaCilok);
+        System.out.println("Harga cilok 1 porsi Rp."+hargaFinalCilok);
+    }
+        
+}
+                                      </code>
+                                    </pre>
+                                    <button class="btn btn-primary position-relative top-0 start-0 translate-middle-y" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6-14" aria-controls="offcanvasRight6-14">Coba Sendiri</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasRight6-14" aria-labelledby="offcanvasRightLabel">
+                                  <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="/assets/img/JavaTiKom.png" alt="" width="100" height="100">Salinlah kode di bawah ini, kemudian jalankan!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body h-100">
+                                    <pre>
+                                      <code class="language-java pe-none">
+class Main {
+
+    static int hargaSetelahPajak(int hargaDasar) {
+        return hargaDasar + (hargaDasar * 10/100);
+    }
+        
+    public static void main(String args[]){
+        int hargaCilok = 5000;
+        int hargaFinalCilok =  hargaSetelahPajak(hargaCilok);
+        System.out.println("Harga cilok 1 porsi Rp."+hargaFinalCilok);
+    }
+        
+}
+                                        
+                                      </code>
+                                    </pre>
+                                    <iframe src="https://trinket.io/embed/java/7512b518e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+
+                                <p style="text-align: justify;" class="mt-3">Di baris 3 – 5, saya mendefinisikan sebuah function <b>hargaSetelahPajak()</b>. Setelah keyword static, terdapat perintah <b>int</b> yang berarti function ini akan mengembalikan nilai bertipe <b>integer</b>.</p>
+
+                                <p style="text-align: justify;">Function <b>hargaSetelahPajak()</b> butuh 1 parameter <b>hargaDasar</b>. Parameter <b>hargaDasar</b> kemudian di pakai dalam rumus perhitungan di baris 4, yakni <b>return hargaDasar + (hargaDasar * 10/100)</b>. Karena terdapat perintah <b>return</b>, maka hasil perhitungan akan dikembalikan kepada kode program yang memanggilnya.</p>
+
+                                <p style="text-align: justify;">Masuk ke kode program utama, di baris 8 kita mengisi variabel <b>hargaCilok</b> dengan angka <b>5000</b>. Selanjutnya di baris 9 juga membuat variabel <b>hargaFinalCilok</b> yang diisi dengan hasil dari pemanggilan function <b>hargaSetelahPajak(hargaCilok)</b>.</p>
+
+                                <p style="text-align: justify;">Perintah ini akan mengirim argument <b>5000</b> yang tersimpan di dalam variabel <b>hargaCilok</b> ke dalam parameter <b>hargaDasar</b> di function <b>hargaSetelahPajak()</b>.</p>
+
+                                <p style="text-align: justify;">Maka perintah <b>return</b> yang dijalankan adalah: <b>return 5000 + (5000* 10/100)</b>, sehingga menghasilkan return <b>5500</b>. Angka 5500 inilah yang dikembalikan ke dalam variabel <b>hargaFinalCilok</b>.</p>
+                                <hr>
+                                
+                                <p style="text-align: justify;">Dalam tutorial Java kali ini kita telah membahas pengertian perintah return serta contoh penggunaannya.</p>
+
+                                <p style="text-align: justify;">Mayoritas fungsi akan mengembalikan sebuah nilai, cukup jarang yang langsung menampilkan hasil dalam bentuk teks. Oleh karena itu cara penggunaan perintah return ini wajib untuk dipahami.</p>
+
+                                <p style="text-align: justify;">Selanjutnya kita akan dibahas tentang Pengertian Variable Scope dalam bahasa Java.</p>
+
+                        </div>
+                    </div>
+                    <!-- akhir poin 3 -->
+                      
+                    </div>
+                    <div class="prevNext d-grid gap-2 d-md-flex justify-content-between mt-3">
+                        <a href="/page/materi6_sub2.html" class="btn btn-outline-info px-4">
+                            <span style="font-size: 1em">
+                                <i class='bx bx-left-arrow-alt'></i>
+                            </span>
+                            PREV
+                        </a>
+                        <a href="/page/materi6_sub4.html">
+                            <button id="next" class="btn btn-outline-info px-4 float-right ">
+                                NEXT
+                                <span style="font-size: 1em">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+    </section>
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  
+    <!-- Ace Editor Java -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/ace.min.js" integrity="sha512-VDk4SZZXv8Karl+tl3RKw3grEZ0ofFrh7J5IKnVgP843O85vbeZv/npjEWtM9BhDuUHbtJc60ZpR4wjiYTfC7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/mode-java.min.js" integrity="sha512-dAGTKAA1p8e4hYvchE5NLx6G7uv3nwuRNHpazHyO0LzdqKqArrm16asxFILrjz6dy8BhDrlMNRFHTfqDVCW/sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.20.0/theme-monokai.min.js" integrity="sha512-8rSB/wU3KoN3rr1VHwPP4dfpbU063BvH6qzwt0oe9E2ThEchzd8MmJylVPxZ5kLvxsShgtWvc9AtIlS7rmPunA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="/page/paginator.js"></script>
+    <script src="/page/cek_pemahaman.js"></script>
+    <script src="/page/latihan_materi1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+  
+    <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e)=>{
+     let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+     arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("close");
+    });
+  </script>
+  <script src="/page/simpandata.js"></script>
+  <script type="module" src="/page/lockData.js"></script>
+  </body>
+  </html>
